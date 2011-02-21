@@ -1,0 +1,9 @@
+[submodule "External/wordnik-api"]
+	path = External/wordnik-api
+	url = git@github.com:countingtoten/api-examples.git
+[submodule "External/asi-http-request"]
+	path = External/asi-http-request
+	url = https://github.com/pokeb/asi-http-request.git
+[submodule "External/json-framework"]
+	path = External/json-framework
+	url = https://github.com/stig/json-framework.git
