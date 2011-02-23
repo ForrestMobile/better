@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B179424130756780066224A /* DefineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B179422130756780066224A /* DefineViewController.m */; };
-		0B179425130756780066224A /* DefineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B179423130756780066224A /* DefineViewController.xib */; };
+		0B1397F513136FF80022BB56 /* WordDefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1397F313136FF80022BB56 /* WordDefinitionViewController.m */; };
+		0B1397F613136FF80022BB56 /* WordDefinitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1397F413136FF80022BB56 /* WordDefinitionViewController.xib */; };
 		0B6AE24C130A3E03001E4D07 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AE239130A3E03001E4D07 /* ASIAuthenticationDialog.m */; };
 		0B6AE24D130A3E03001E4D07 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AE23C130A3E03001E4D07 /* ASIDataCompressor.m */; };
 		0B6AE24E130A3E03001E4D07 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AE23E130A3E03001E4D07 /* ASIDataDecompressor.m */; };
@@ -45,6 +45,8 @@
 		0B6AE3C4130A40E3001E4D07 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B6AE3C3130A40E3001E4D07 /* APIKey.plist */; };
 		0B95D732130E33980077CA05 /* WordHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B95D730130E33980077CA05 /* WordHistoryViewController.m */; };
 		0B95D733130E33980077CA05 /* WordHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95D731130E33980077CA05 /* WordHistoryViewController.xib */; };
+		0BDD62F91315737C0026A52A /* DictionarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD62F71315737C0026A52A /* DictionarySearchViewController.m */; };
+		0BDD62FA1315737C0026A52A /* DictionarySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDD62F81315737C0026A52A /* DictionarySearchViewController.xib */; };
 		1D3623260D0F684500981E51 /* BetterDictionaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -56,9 +58,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B179421130756780066224A /* DefineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineViewController.h; sourceTree = "<group>"; };
-		0B179422130756780066224A /* DefineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineViewController.m; sourceTree = "<group>"; };
-		0B179423130756780066224A /* DefineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DefineViewController.xib; path = Classes/DefineViewController.xib; sourceTree = "<group>"; };
+		0B1397F213136FF80022BB56 /* WordDefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDefinitionViewController.h; sourceTree = "<group>"; };
+		0B1397F313136FF80022BB56 /* WordDefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordDefinitionViewController.m; sourceTree = "<group>"; };
+		0B1397F413136FF80022BB56 /* WordDefinitionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WordDefinitionViewController.xib; path = Classes/WordDefinitionViewController.xib; sourceTree = "<group>"; };
 		0B6AE238130A3E03001E4D07 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = "External/asi-http-request/Classes/ASIAuthenticationDialog.h"; sourceTree = SOURCE_ROOT; };
 		0B6AE239130A3E03001E4D07 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = "External/asi-http-request/Classes/ASIAuthenticationDialog.m"; sourceTree = SOURCE_ROOT; };
 		0B6AE23A130A3E03001E4D07 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = "External/asi-http-request/Classes/ASICacheDelegate.h"; sourceTree = SOURCE_ROOT; };
@@ -130,6 +132,9 @@
 		0B95D72F130E33980077CA05 /* WordHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordHistoryViewController.h; sourceTree = "<group>"; };
 		0B95D730130E33980077CA05 /* WordHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordHistoryViewController.m; sourceTree = "<group>"; };
 		0B95D731130E33980077CA05 /* WordHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WordHistoryViewController.xib; path = Classes/WordHistoryViewController.xib; sourceTree = "<group>"; };
+		0BDD62F61315737C0026A52A /* DictionarySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DictionarySearchViewController.h; path = ../DictionarySearchViewController.h; sourceTree = "<group>"; };
+		0BDD62F71315737C0026A52A /* DictionarySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DictionarySearchViewController.m; path = ../DictionarySearchViewController.m; sourceTree = "<group>"; };
+		0BDD62F81315737C0026A52A /* DictionarySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DictionarySearchViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterDictionaryAppDelegate.m; sourceTree = "<group>"; };
@@ -172,8 +177,10 @@
 				0B6AE256130A3E27001E4D07 /* WordnikAPI */,
 				1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */,
 				1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */,
-				0B179421130756780066224A /* DefineViewController.h */,
-				0B179422130756780066224A /* DefineViewController.m */,
+				0BDD62F61315737C0026A52A /* DictionarySearchViewController.h */,
+				0BDD62F71315737C0026A52A /* DictionarySearchViewController.m */,
+				0B1397F213136FF80022BB56 /* WordDefinitionViewController.h */,
+				0B1397F313136FF80022BB56 /* WordDefinitionViewController.m */,
 				0B95D72F130E33980077CA05 /* WordHistoryViewController.h */,
 				0B95D730130E33980077CA05 /* WordHistoryViewController.m */,
 			);
@@ -322,8 +329,9 @@
 				0B6AE3C3130A40E3001E4D07 /* APIKey.plist */,
 				8D1107310486CEB800E47090 /* BetterDictionary-Info.plist */,
 				2819305F112F816700ECF9B4 /* BetterDictionary.xcdatamodeld */,
-				0B179423130756780066224A /* DefineViewController.xib */,
+				0BDD62F81315737C0026A52A /* DictionarySearchViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				0B1397F413136FF80022BB56 /* WordDefinitionViewController.xib */,
 				0B95D731130E33980077CA05 /* WordHistoryViewController.xib */,
 			);
 			name = Resources;
@@ -397,9 +405,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				0B179425130756780066224A /* DefineViewController.xib in Resources */,
 				0B6AE3C4130A40E3001E4D07 /* APIKey.plist in Resources */,
 				0B95D733130E33980077CA05 /* WordHistoryViewController.xib in Resources */,
+				0B1397F613136FF80022BB56 /* WordDefinitionViewController.xib in Resources */,
+				0BDD62FA1315737C0026A52A /* DictionarySearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +422,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* BetterDictionaryAppDelegate.m in Sources */,
 				28193060112F816700ECF9B4 /* BetterDictionary.xcdatamodeld in Sources */,
-				0B179424130756780066224A /* DefineViewController.m in Sources */,
 				0B6AE24C130A3E03001E4D07 /* ASIAuthenticationDialog.m in Sources */,
 				0B6AE24D130A3E03001E4D07 /* ASIDataCompressor.m in Sources */,
 				0B6AE24E130A3E03001E4D07 /* ASIDataDecompressor.m in Sources */,
@@ -444,6 +452,8 @@
 				0B6AE3B5130A3F74001E4D07 /* WordListService.m in Sources */,
 				0B6AE3B6130A3F74001E4D07 /* WordService.m in Sources */,
 				0B95D732130E33980077CA05 /* WordHistoryViewController.m in Sources */,
+				0B1397F513136FF80022BB56 /* WordDefinitionViewController.m in Sources */,
+				0BDD62F91315737C0026A52A /* DictionarySearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

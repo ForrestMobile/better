@@ -8,6 +8,7 @@
 
 #import "WordHistoryViewController.h"
 #import "BetterDictionaryAppDelegate.h"
+#import "WordDefinitionViewController.h"
 
 
 @implementation WordHistoryViewController
@@ -32,6 +33,9 @@
 	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Word" inManagedObjectContext:context];
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	[request setEntity:entityDescription];
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"lookupCount" ascending:NO];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[request setSortDescriptors:sortDescriptors];
 	
 	NSError *error;
 	NSArray *objects = [context executeFetchRequest:request error:&error];
@@ -141,34 +145,19 @@
 */
 
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
 #pragma mark -
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-    */
+    WordDefinitionViewController *wordDefViewController = [[WordDefinitionViewController alloc] 
+														   initWithNibName:@"WordDefinitionViewController" 
+														   bundle:nil];
+	
+	NSUInteger row = [indexPath row];
+	wordDefViewController.wordToLookup = [wordHistory objectAtIndex:row];
+    [self.navigationController pushViewController:wordDefViewController animated:YES];
+    [wordDefViewController release];
+
 }
 
 
