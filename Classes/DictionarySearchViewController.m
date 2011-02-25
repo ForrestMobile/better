@@ -122,7 +122,30 @@
 																				   object:searchText] autorelease];
 		[workQueue cancelAllOperations];
 		[workQueue addOperation:operation];
+	} else {
+		searchResults = nil;
+		[self.searchDisplayController.searchResultsTableView reloadData];
 	}
+}
+
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)aSearchBar {
+
+}
+
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)aSearchBar {
+    [aSearchBar resignFirstResponder];
+}
+
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)aSearchBar {
+    [aSearchBar resignFirstResponder];
+}
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)aSearchBar {
+    [aSearchBar resignFirstResponder];
 }
 
 

@@ -10,7 +10,7 @@
 #import "WordService.h"
 
 
-@interface DictionarySearchViewController : UIViewController <UISearchDisplayDelegate, UISearchBarDelegate> {
+@interface DictionarySearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate> {
 	UISearchBar *searchBar;
 	WordService *wordService;
 	
