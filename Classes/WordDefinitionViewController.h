@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
 
-@interface WordDefinitionViewController : UIViewController {
+@interface WordDefinitionViewController : UIViewController <MBProgressHUDDelegate> {
+	MBProgressHUD *loadingStatus;
 	UITextView *wordDefinitionView;
 	NSString *wordToLookup;
 }
@@ -17,5 +19,6 @@
 @property (nonatomic, retain) NSString *wordToLookup;
 
 - (void)updateDefinition;
+- (void)updateDefinitionText:(NSString *)definition;
 
 @end

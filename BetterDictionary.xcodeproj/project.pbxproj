@@ -47,6 +47,7 @@
 		0B95D733130E33980077CA05 /* WordHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95D731130E33980077CA05 /* WordHistoryViewController.xib */; };
 		0BD954B813176C0D00286F3C /* DictionarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD954B713176C0D00286F3C /* DictionarySearchViewController.m */; };
 		0BD954BA13176C1700286F3C /* DictionarySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD954B913176C1700286F3C /* DictionarySearchViewController.xib */; };
+		0BDBC96D131C865800CF55E8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBC96C131C865800CF55E8 /* MBProgressHUD.m */; };
 		1D3623260D0F684500981E51 /* BetterDictionaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -135,6 +136,8 @@
 		0BD954B613176C0D00286F3C /* DictionarySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionarySearchViewController.h; sourceTree = "<group>"; };
 		0BD954B713176C0D00286F3C /* DictionarySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionarySearchViewController.m; sourceTree = "<group>"; };
 		0BD954B913176C1700286F3C /* DictionarySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DictionarySearchViewController.xib; path = Classes/DictionarySearchViewController.xib; sourceTree = "<group>"; };
+		0BDBC96B131C865800CF55E8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "External/progress-hud/MBProgressHUD.h"; sourceTree = SOURCE_ROOT; };
+		0BDBC96C131C865800CF55E8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "External/progress-hud/MBProgressHUD.m"; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterDictionaryAppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +176,7 @@
 			children = (
 				0B6AE228130A3DE4001E4D07 /* ASIHTTPRequest */,
 				0B6AE254130A3E08001E4D07 /* JSON */,
+				0BDBC966131C861E00CF55E8 /* MBProgressHUD */,
 				0B6AE255130A3E18001E4D07 /* Reachability */,
 				0B6AE256130A3E27001E4D07 /* WordnikAPI */,
 				1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */,
@@ -291,6 +295,15 @@
 			children = (
 			);
 			name = TabBar;
+			sourceTree = "<group>";
+		};
+		0BDBC966131C861E00CF55E8 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0BDBC96B131C865800CF55E8 /* MBProgressHUD.h */,
+				0BDBC96C131C865800CF55E8 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -454,6 +467,7 @@
 				0B95D732130E33980077CA05 /* WordHistoryViewController.m in Sources */,
 				0B1397F513136FF80022BB56 /* WordDefinitionViewController.m in Sources */,
 				0BD954B813176C0D00286F3C /* DictionarySearchViewController.m in Sources */,
+				0BDBC96D131C865800CF55E8 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,49 +12,80 @@
 
 @implementation WordDefinitionViewController
 @synthesize wordDefinitionView, wordToLookup;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.title = wordToLookup;
-	[self updateDefinition];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	
+	loadingStatus = [[MBProgressHUD alloc] initWithView:self.view.window];
+	[self.view.window addSubview:loadingStatus];
+	
+	loadingStatus.delegate = self;
+	
+	[loadingStatus showWhileExecuting:@selector(updateDefinition) onTarget:self withObject:nil animated:YES];
 }
 
 - (void)updateDefinition {
 	WordService *ws = [[WordService alloc] init];
 	
 	NSArray *definitions;
-	NSString *mergeDefinitions = @"";
+	NSMutableString *mergeDefinitions = [[NSMutableString alloc] init];
 	
 	definitions = [ws fetchDefinitions:wordToLookup useCanonical:YES];
 	
 	NSUInteger count = 1;
 	for (Definition *def in definitions) {
 		if([def text] != nil) {
-			mergeDefinitions = [mergeDefinitions stringByAppendingFormat:@"%d. %@: %@\n\r", count, [[def partOfSpeech] name], [def text]];
+			[mergeDefinitions appendString:[NSString stringWithFormat:@"%d. %@: %@\n\r", count, 
+																						[[def partOfSpeech] name], 
+																						[def text]]];
 			count++;
 		}
 	}
 	
-	wordDefinitionView.text = mergeDefinitions;
+	[self performSelectorOnMainThread:@selector(updateDefinitionText:) withObject:mergeDefinitions waitUntilDone:YES];
 	
+	[mergeDefinitions release];
 	[ws release];	
 }
 
+- (void)updateDefinitionText:(NSString *)definition {
+	wordDefinitionView.text = definition;
+}
+
+
+#pragma mark -
+#pragma mark MBProgressHUDDelegate methods
+
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+    [loadingStatus removeFromSuperview];
+    [loadingStatus release];
+}
+
+
+#pragma mark -
+#pragma mark Memory management
+
+
 - (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc. that aren't in use.
 }
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    wordDefinitionView = nil;
+	wordToLookup = nil;
 }
 
 
 - (void)dealloc {
     [super dealloc];
+	[wordDefinitionView release];
+	[wordToLookup release];
 }
 
 
