@@ -12,11 +12,14 @@
 @interface WordHistoryViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
 	UITableView *table;
 
-	NSArray *wordHistory;
-	NSArray *wordLookupCount;
+	NSMutableArray *wordHistory;
+	NSMutableArray *wordLookupCount;
 }
 @property (nonatomic, retain) IBOutlet UITableView *table;
-@property (nonatomic, retain) NSArray *wordHistory;
-@property (nonatomic, retain) NSArray *wordLookupCount;
+@property (nonatomic, retain) NSMutableArray *wordHistory;
+@property (nonatomic, retain) NSMutableArray *wordLookupCount;
+
+- (void)loadWordHistory;
+- (void)removeWordFromHistory:(NSString *)word;
 
 @end
