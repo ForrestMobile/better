@@ -129,26 +129,6 @@
 }
 
 
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)aSearchBar {
-
-}
-
-
-- (void)searchBarTextDidEndEditing:(UISearchBar *)aSearchBar {
-    [aSearchBar resignFirstResponder];
-}
-
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)aSearchBar {
-    [aSearchBar resignFirstResponder];
-}
-
-
-- (void)searchBarCancelButtonClicked:(UISearchBar *)aSearchBar {
-    [aSearchBar resignFirstResponder];
-}
-
-
 #pragma mark -
 #pragma mark Memory management
 

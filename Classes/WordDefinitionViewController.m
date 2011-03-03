@@ -21,12 +21,14 @@
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
-	loadingStatus = [[MBProgressHUD alloc] initWithView:self.view.window];
-	[self.view.window addSubview:loadingStatus];
+	if ([wordDefinitionView.text length] <= 0) {
+		loadingStatus = [[MBProgressHUD alloc] initWithView:self.view.window];
+		[self.view.window addSubview:loadingStatus];
 	
-	loadingStatus.delegate = self;
+		loadingStatus.delegate = self;
 	
-	[loadingStatus showWhileExecuting:@selector(updateDefinition) onTarget:self withObject:nil animated:YES];
+		[loadingStatus showWhileExecuting:@selector(updateDefinition) onTarget:self withObject:nil animated:YES];
+	}
 }
 
 - (void)updateDefinition {
