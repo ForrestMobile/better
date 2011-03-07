@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="31"/>
+			<integer value="17"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -56,15 +56,17 @@
 			</object>
 			<object class="IBUITabBarController" id="1048020309">
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
+					<int key="IBUIStatusBarStyle">2</int>
+				</object>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="interfaceOrientation">1</int>
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="436806846">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="1062355193">
-						<string key="IBUITitle">Definition</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="842319040">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="908636117">
+						<string key="IBUITitle">Recent</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<reference key="IBUITabBar"/>
 					</object>
@@ -75,7 +77,7 @@
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="982168148">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="309406740">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{320, 44}</string>
@@ -87,20 +89,15 @@
 					</object>
 					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUIViewController" id="11713006">
+						<object class="IBUIViewController" id="774880683">
 							<reference key="IBUIToolbarItems" ref="0"/>
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="794844854">
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="572106120">
 								<reference key="IBUINavigationBar"/>
-								<string key="IBUITitle">Better Dictionary</string>
-								<object class="IBUIBarButtonItem" key="IBUIBackBarButtonItem" id="812523584">
-									<string key="IBUITitle">Search</string>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-									<int key="IBUIStyle">1</int>
-								</object>
+								<string key="IBUITitle">Word History</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="436806846"/>
-							<string key="IBUINibName">DictionarySearchViewController</string>
+							<reference key="IBUIParentViewController" ref="842319040"/>
+							<string key="IBUINibName">WordHistoryViewController</string>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="interfaceOrientation">1</int>
 							</object>
@@ -111,13 +108,11 @@
 				</object>
 				<object class="NSMutableArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<reference ref="436806846"/>
-					<object class="IBUINavigationController" id="842319040">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="908636117">
-							<string key="IBUITitle"/>
+					<object class="IBUINavigationController" id="436806846">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="1062355193">
+							<string key="IBUITitle">Dictionary</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							<reference key="IBUITabBar"/>
-							<int key="IBUISystemItemIdentifier">6</int>
 						</object>
 						<reference key="IBUIToolbarItems" ref="0"/>
 						<reference key="IBUIParentViewController" ref="1048020309"/>
@@ -126,7 +121,7 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="309406740">
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="982168148">
 							<nil key="NSNextResponder"/>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrameSize">{320, 44}</string>
@@ -138,14 +133,19 @@
 						</object>
 						<object class="NSMutableArray" key="IBUIViewControllers">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIViewController" id="774880683">
+							<object class="IBUIViewController" id="11713006">
 								<reference key="IBUIToolbarItems" ref="0"/>
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="572106120">
-									<string key="IBUITitle">Word History</string>
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="794844854">
+									<string key="IBUITitle">Better Dictionary</string>
+									<object class="IBUIBarButtonItem" key="IBUIBackBarButtonItem" id="812523584">
+										<string key="IBUITitle">Search</string>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIStyle">1</int>
+									</object>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
-								<reference key="IBUIParentViewController" ref="842319040"/>
-								<string key="IBUINibName">WordHistoryViewController</string>
+								<reference key="IBUIParentViewController" ref="436806846"/>
+								<string key="IBUINibName">DictionarySearchViewController</string>
 								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 									<int key="interfaceOrientation">1</int>
 								</object>
@@ -154,6 +154,7 @@
 							</object>
 						</object>
 					</object>
+					<reference ref="842319040"/>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="856494500">
 					<nil key="NSNextResponder"/>
@@ -373,7 +374,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">34</int>
+			<int key="maxID">36</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

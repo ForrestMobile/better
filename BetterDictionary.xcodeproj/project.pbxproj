@@ -45,6 +45,9 @@
 		0B6AE3C4130A40E3001E4D07 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B6AE3C3130A40E3001E4D07 /* APIKey.plist */; };
 		0B95D732130E33980077CA05 /* WordHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B95D730130E33980077CA05 /* WordHistoryViewController.m */; };
 		0B95D733130E33980077CA05 /* WordHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95D731130E33980077CA05 /* WordHistoryViewController.xib */; };
+		0BB195B013249E04007D441B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB195AD13249E04007D441B /* Icon.png */; };
+		0BB195B213249E0A007D441B /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 0BB195B113249E0A007D441B /* iTunesArtwork */; };
+		0BB195CB13249FBA007D441B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB195CA13249FBA007D441B /* Icon@2x.png */; };
 		0BD954B813176C0D00286F3C /* DictionarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD954B713176C0D00286F3C /* DictionarySearchViewController.m */; };
 		0BD954BA13176C1700286F3C /* DictionarySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD954B913176C1700286F3C /* DictionarySearchViewController.xib */; };
 		0BDBC96D131C865800CF55E8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBC96C131C865800CF55E8 /* MBProgressHUD.m */; };
@@ -133,6 +136,9 @@
 		0B95D72F130E33980077CA05 /* WordHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordHistoryViewController.h; sourceTree = "<group>"; };
 		0B95D730130E33980077CA05 /* WordHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordHistoryViewController.m; sourceTree = "<group>"; };
 		0B95D731130E33980077CA05 /* WordHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WordHistoryViewController.xib; path = Classes/WordHistoryViewController.xib; sourceTree = "<group>"; };
+		0BB195AD13249E04007D441B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icons/Icon.png; sourceTree = "<group>"; };
+		0BB195B113249E0A007D441B /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Images/Icons/iTunesArtwork; sourceTree = "<group>"; };
+		0BB195CA13249FBA007D441B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icons/Icon@2x.png"; sourceTree = "<group>"; };
 		0BD954B613176C0D00286F3C /* DictionarySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionarySearchViewController.h; sourceTree = "<group>"; };
 		0BD954B713176C0D00286F3C /* DictionarySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionarySearchViewController.m; sourceTree = "<group>"; };
 		0BD954B913176C1700286F3C /* DictionarySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DictionarySearchViewController.xib; path = Classes/DictionarySearchViewController.xib; sourceTree = "<group>"; };
@@ -189,6 +195,16 @@
 				0B95D730130E33980077CA05 /* WordHistoryViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0B1FA1F01320A77400BDE63F /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0BB195B113249E0A007D441B /* iTunesArtwork */,
+				0BB195AD13249E04007D441B /* Icon.png */,
+				0BB195CA13249FBA007D441B /* Icon@2x.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 		0B6AE228130A3DE4001E4D07 /* ASIHTTPRequest */ = {
@@ -285,6 +301,7 @@
 		0B6AE3C1130A40C3001E4D07 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0B1FA1F01320A77400BDE63F /* Icons */,
 				0B6AE3C2130A40CA001E4D07 /* TabBar */,
 			);
 			name = Images;
@@ -422,6 +439,9 @@
 				0B95D733130E33980077CA05 /* WordHistoryViewController.xib in Resources */,
 				0B1397F613136FF80022BB56 /* WordDefinitionViewController.xib in Resources */,
 				0BD954BA13176C1700286F3C /* DictionarySearchViewController.xib in Resources */,
+				0BB195B013249E04007D441B /* Icon.png in Resources */,
+				0BB195B213249E0A007D441B /* iTunesArtwork in Resources */,
+				0BB195CB13249FBA007D441B /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
