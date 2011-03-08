@@ -71,15 +71,16 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	static NSString *SearchCellIdentifier = @"SearchCell";
+	static NSString *SearchCellIdentifier = @"DictionarySearchCell";
 	
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SearchCellIdentifier];
 	if (cell == nil) {
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SearchCellIdentifier] autorelease];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}
-	
+	if([searchResults objectAtIndex:indexPath.row] != nil)
 	cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
+
 	return cell;
 }
 
@@ -97,7 +98,6 @@
 	wordDefViewController.wordToLookup = word;
     [self.navigationController pushViewController:wordDefViewController animated:YES];
     [wordDefViewController release];
-	[word release];
 }
 
 
@@ -105,13 +105,14 @@
 #pragma mark Search bar delegate methods
 
 - (void)updateSearch:(NSString *)searchText {
-	NSLog([NSString stringWithFormat:@"updateSearch:%@ start", searchText]);
+//	NSLog([NSString stringWithFormat:@"updateSearch:%@ start", searchText]);
+//	if(searchResults != nil) [searchResults release];
 	searchResults = [wordService suggestWord:searchText];
 	
 	[self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) 
 																		  withObject:nil 
 																	   waitUntilDone:YES];
-	NSLog(@"updateSearch finished");
+//	NSLog(@"updateSearch finished");
 }
 
 
@@ -123,7 +124,7 @@
 		[workQueue cancelAllOperations];
 		[workQueue addOperation:operation];
 	} else {
-		searchResults = nil;
+		//searchResults = nil;
 		[self.searchDisplayController.searchResultsTableView reloadData];
 	}
 }

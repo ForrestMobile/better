@@ -65,6 +65,7 @@
 	
 	[words release];
 	[counts release];
+	[sortDescriptor release];
 	[sortDescriptors release];
 	[request release];
 	
