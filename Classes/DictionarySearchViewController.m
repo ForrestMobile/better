@@ -105,14 +105,12 @@
 #pragma mark Search bar delegate methods
 
 - (void)updateSearch:(NSString *)searchText {
-//	NSLog([NSString stringWithFormat:@"updateSearch:%@ start", searchText]);
 	if(searchResults != nil) [searchResults release];
 	searchResults = [wordService suggestWord:searchText];
 	
 	[self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) 
 																		  withObject:nil 
 																	   waitUntilDone:YES];
-//	NSLog(@"updateSearch finished");
 }
 
 
@@ -124,7 +122,6 @@
 		[workQueue cancelAllOperations];
 		[workQueue addOperation:operation];
 	} else {
-		//searchResults = nil;
 		[self.searchDisplayController.searchResultsTableView reloadData];
 	}
 }

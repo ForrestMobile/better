@@ -21,7 +21,7 @@
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
-	if ([wordDefinitionView.text length] <= 0) {
+	if ([wordDefinitionView.text length] == 0) {
 		loadingStatus = [[MBProgressHUD alloc] initWithView:self.view.window];
 		[self.view.window addSubview:loadingStatus];
 	
@@ -47,6 +47,11 @@
 																						[def text]]];
 			count++;
 		}
+	}
+	
+	if ([mergeDefinitions length] == 0) 
+	{
+		[mergeDefinitions appendString:[NSString stringWithFormat:@"No definitions are available for %@.", wordToLookup]];
 	}
 	
 	[self performSelectorOnMainThread:@selector(updateDefinitionText:) withObject:mergeDefinitions waitUntilDone:YES];
