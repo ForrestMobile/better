@@ -62,9 +62,9 @@
 	
         [word setValue:wordLookedUp forKey:kWordKey];
         [word setValue:[NSNumber numberWithInt:count] forKey:kCountKey];
-	    [request release];
         [context save:&error];
     }
+ 	[request release];
 
 }
 
