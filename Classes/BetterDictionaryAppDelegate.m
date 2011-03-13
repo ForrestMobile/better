@@ -25,7 +25,7 @@
 	NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
 	
 	API_KEY = [[dict objectForKey:kWordNikKey] retain];
- //   ADMOB_PRODUCT_ID = [[dict objectForKey:kAdMobKey] retain];
+    ADMOB_PRODUCT_ID = [[dict objectForKey:kAdMobKey] retain];
 	
 	[dict release];
 	
