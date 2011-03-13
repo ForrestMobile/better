@@ -69,6 +69,10 @@
 		0BFC3913132C6B30009BFAC6 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC3912132C6B30009BFAC6 /* AdViewController.m */; };
 		0BFC3926132C7E70009BFAC6 /* asi-http-request LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC3925132C7E70009BFAC6 /* asi-http-request LICENSE */; };
 		0BFC392A132C7EB0009BFAC6 /* JSON LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC3929132C7EB0009BFAC6 /* JSON LICENSE */; };
+		0BFC392D132C81D5009BFAC6 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC392B132C81D5009BFAC6 /* book.png */; };
+		0BFC3930132C8311009BFAC6 /* book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC392F132C8311009BFAC6 /* book@2x.png */; };
+		0BFC3935132C83D7009BFAC6 /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC3933132C83D7009BFAC6 /* notepad.png */; };
+		0BFC3936132C83D7009BFAC6 /* notepad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC3934132C83D7009BFAC6 /* notepad@2x.png */; };
 		1D3623260D0F684500981E51 /* BetterDictionaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -194,6 +198,10 @@
 		0BFC3912132C6B30009BFAC6 /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		0BFC3925132C7E70009BFAC6 /* asi-http-request LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "asi-http-request LICENSE"; path = "External/asi-http-request/asi-http-request LICENSE"; sourceTree = "<group>"; };
 		0BFC3929132C7EB0009BFAC6 /* JSON LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "JSON LICENSE"; path = "External/json-framework/JSON LICENSE"; sourceTree = "<group>"; };
+		0BFC392B132C81D5009BFAC6 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book.png; path = Images/TabBar/book.png; sourceTree = "<group>"; };
+		0BFC392F132C8311009BFAC6 /* book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "book@2x.png"; path = "Images/TabBar/book@2x.png"; sourceTree = "<group>"; };
+		0BFC3933132C83D7009BFAC6 /* notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notepad.png; path = Images/TabBar/notepad.png; sourceTree = "<group>"; };
+		0BFC3934132C83D7009BFAC6 /* notepad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notepad@2x.png"; path = "Images/TabBar/notepad@2x.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterDictionaryAppDelegate.m; sourceTree = "<group>"; };
@@ -368,6 +376,10 @@
 		0B6AE3C2130A40CA001E4D07 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				0BFC392B132C81D5009BFAC6 /* book.png */,
+				0BFC392F132C8311009BFAC6 /* book@2x.png */,
+				0BFC3933132C83D7009BFAC6 /* notepad.png */,
+				0BFC3934132C83D7009BFAC6 /* notepad@2x.png */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -582,6 +594,10 @@
 				0BB195CB13249FBA007D441B /* Icon@2x.png in Resources */,
 				0BFC3926132C7E70009BFAC6 /* asi-http-request LICENSE in Resources */,
 				0BFC392A132C7EB0009BFAC6 /* JSON LICENSE in Resources */,
+				0BFC392D132C81D5009BFAC6 /* book.png in Resources */,
+				0BFC3930132C8311009BFAC6 /* book@2x.png in Resources */,
+				0BFC3935132C83D7009BFAC6 /* notepad.png in Resources */,
+				0BFC3936132C83D7009BFAC6 /* notepad@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
