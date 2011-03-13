@@ -20,3 +20,6 @@
 #define kErrorUnableToUpdateWordHistory     @"Unable to update word history"
 #define kErrorUnableToLoadHistory           @"Unable to load word history"
 #define kErrorUnableToDeleteWord            @"Unable to delete word from history"
+#define kErrorUnableToCreatePersistentStore @"Unable to create Persistent Store"
+
+#define kErrorCoreDataMessageForUser                @"Unable to save word to history. Please restart the app using your Home button"
