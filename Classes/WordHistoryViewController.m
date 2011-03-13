@@ -9,6 +9,7 @@
 #import "WordHistoryViewController.h"
 #import "BetterDictionaryAppDelegate.h"
 #import "WordDefinitionViewController.h"
+#import "BetterDictionaryConstants.h"
 
 
 @implementation WordHistoryViewController
@@ -29,11 +30,11 @@
     BetterDictionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
 	NSManagedObjectContext *context = [appDelegate managedObjectContext];
 	
-	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Word" inManagedObjectContext:context];
+	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:kEntityName inManagedObjectContext:context];
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	[request setEntity:entityDescription];
 	
-	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"lookupCount" ascending:NO];
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:kCountKey ascending:NO];
 	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
 
 	[request setSortDescriptors:sortDescriptors];
@@ -42,29 +43,31 @@
 	NSArray *objects = [context executeFetchRequest:request error:&error];
 	
 	if (objects == nil) {
-		NSLog(@"There was an error!");
-		// Error Handling
-	}
-	
-	NSMutableArray *words = [[NSMutableArray alloc] init];
-	NSMutableArray *counts = [[NSMutableArray alloc] init];
-	
-	for (NSManagedObject *oneObject in objects) {
-		NSString *word = [oneObject valueForKey:@"word"];
-		NSNumber *lookupCount = [oneObject valueForKey:@"lookupCount"];
+		NSLog(@"%@ %@, %@", kErrorUnableToLoadHistory, error, [error userInfo]);
+        
 		
-		[words addObject:word];
-		[counts addObject:[lookupCount stringValue]];
-	}
+	} else {	
+        NSMutableArray *words = [[NSMutableArray alloc] init];
+        NSMutableArray *counts = [[NSMutableArray alloc] init];
+        
+        for (NSManagedObject *oneObject in objects) {
+            NSString *word = [oneObject valueForKey:kWordKey];
+            NSNumber *lookupCount = [oneObject valueForKey:kCountKey];
+		
+            [words addObject:word];
+            [counts addObject:[lookupCount stringValue]];
+        }
 	
-	if (wordHistory != nil) [wordHistory release];
-	wordHistory = [[NSMutableArray alloc] initWithArray:words];
+        if (wordHistory != nil) [wordHistory release];
+        wordHistory = [[NSMutableArray alloc] initWithArray:words];
 	
-	if (wordLookupCount != nil) [wordLookupCount release];
-	wordLookupCount = [[NSMutableArray alloc] initWithArray:counts];
+        if (wordLookupCount != nil) [wordLookupCount release];
+        wordLookupCount = [[NSMutableArray alloc] initWithArray:counts];
 	
-	[words release];
-	[counts release];
+        [words release];
+        [counts release];
+    }
+    
 	[sortDescriptor release];
 	[sortDescriptors release];
 	[request release];
@@ -77,10 +80,11 @@
 	BetterDictionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
 	NSManagedObjectContext *context = [appDelegate managedObjectContext];
 	
-	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Word" inManagedObjectContext:context];
+	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:kEntityName inManagedObjectContext:context];
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	[request setEntity:entityDescription];
 	
+    // Using kWordKey instead of "word" causes errors here. Oddness.
 	NSPredicate *pred = [NSPredicate predicateWithFormat:@"(word = %@)", word];
 	[request setPredicate:pred];
 	
@@ -88,16 +92,24 @@
 	NSArray *objects = [context executeFetchRequest:request error:&error];
 	
 	if (objects == nil) {
-		NSLog(@"There was an error!");
-		// Error Handling
-	}
+		NSLog(@"%@ %@, %@", kErrorUnableToLoadHistory, error, [error userInfo]);
+        
+        NSString *message = [[NSString alloc] initWithString:@"Unable to delete word from history"];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+        [message release];
+	} else {
 	
-	for (NSManagedObject *oneObject in objects) {
-		[context deleteObject:oneObject];
-	}
-	
+        for (NSManagedObject *oneObject in objects) {
+            [context deleteObject:oneObject];
+        }
+       	[context save:&error];
+    }
+    
 	[request release];
-	[context save:&error];
+
 }
 
 

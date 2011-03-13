@@ -144,6 +144,7 @@
 		0BD954B913176C1700286F3C /* DictionarySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DictionarySearchViewController.xib; path = Classes/DictionarySearchViewController.xib; sourceTree = "<group>"; };
 		0BDBC96B131C865800CF55E8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "External/progress-hud/MBProgressHUD.h"; sourceTree = SOURCE_ROOT; };
 		0BDBC96C131C865800CF55E8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "External/progress-hud/MBProgressHUD.m"; sourceTree = SOURCE_ROOT; };
+		0BFC38E0132C3556009BFAC6 /* BetterDictionaryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryConstants.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterDictionaryAppDelegate.m; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 				0B6AE256130A3E27001E4D07 /* WordnikAPI */,
 				1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */,
 				1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */,
+				0BFC38E0132C3556009BFAC6 /* BetterDictionaryConstants.h */,
 				0BD954B613176C0D00286F3C /* DictionarySearchViewController.h */,
 				0BD954B713176C0D00286F3C /* DictionarySearchViewController.m */,
 				0B1397F213136FF80022BB56 /* WordDefinitionViewController.h */,

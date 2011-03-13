@@ -9,6 +9,7 @@
 #import "DictionarySearchViewController.h"
 #import "BetterDictionaryAppDelegate.h"
 #import "WordDefinitionViewController.h"
+#import "BetterDictionaryConstants.h"
 
 
 @implementation DictionarySearchViewController
@@ -36,9 +37,10 @@
 	
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	
-	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Word" inManagedObjectContext:context];
+	NSEntityDescription *entityDescription = [NSEntityDescription entityForName:kEntityName inManagedObjectContext:context];
 	[request setEntity:entityDescription];
 	
+    // Using kWordKey instead of "word" causes errors here. Oddness.
 	NSPredicate *pred = [NSPredicate predicateWithFormat:@"(word = %@)", wordLookedUp];
 	[request setPredicate:pred];
 	
@@ -47,22 +49,23 @@
 	NSArray *objects = [context executeFetchRequest:request error:&error];
 	
 	if(objects == nil) {
-		NSLog(@"There was an error");
-		// Handle the error
-	}
-	if ([objects count] > 0)
-		word = [objects objectAtIndex:0];
-	else 
-		word = [NSEntityDescription insertNewObjectForEntityForName:@"Word" inManagedObjectContext:context];
+		NSLog(@"%@ %@, %@", kErrorUnableToUpdateWordHistory, error, [error userInfo]);
+		
+	} else {
+        if ([objects count] > 0)
+            word = [objects objectAtIndex:0];
+        else 
+            word = [NSEntityDescription insertNewObjectForEntityForName:kEntityName inManagedObjectContext:context];
 	
-	int count = [[word valueForKey:@"lookupCount"] intValue];
-	count++;
+        int count = [[word valueForKey:kCountKey] intValue];
+        count++;
 	
-	[word setValue:wordLookedUp forKey:@"word"];
-	[word setValue:[NSNumber numberWithInt:count] forKey:@"lookupCount"];
-	
-	[request release];
-	[context save:&error];
+        [word setValue:wordLookedUp forKey:kWordKey];
+        [word setValue:[NSNumber numberWithInt:count] forKey:kCountKey];
+	    [request release];
+        [context save:&error];
+    }
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

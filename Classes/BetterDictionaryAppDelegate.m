@@ -8,6 +8,7 @@
 
 #import "BetterDictionaryAppDelegate.h"
 #import "ApplicationConstants.h"
+#import "BetterDictionaryConstants.h"
 
 
 @implementation BetterDictionaryAppDelegate
@@ -80,13 +81,15 @@
 	NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-            /*
-             Replace this implementation with code to handle the error appropriately.
-             
-             abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-             */
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
+            NSLog(@"%@ %@, %@", kErrorUnableToSaveContext, error, [error userInfo]);
+            
+            NSString *message = [[NSString alloc] initWithString:@"Unable to save word to history. Please restart the app using your Home button"];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                                  
+            [alert show];
+            [alert release];
+            [message release];
+                                  
         } 
     }
 }    
