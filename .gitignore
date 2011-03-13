@@ -1,5 +1,7 @@
-APIKey.plist
+APIKeys.plist
 Images/*
+External/admob/*
+External/touch-json/*
 
 #Xcode
 build/*

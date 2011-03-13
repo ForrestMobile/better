@@ -11,7 +11,7 @@
 
 
 @implementation WordDefinitionViewController
-@synthesize wordDefinitionView, wordToLookup;
+@synthesize adViewController, wordDefinitionView, wordToLookup;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,10 +38,10 @@
 	NSMutableString *mergeDefinitions = [[NSMutableString alloc] init];
 	
 	definitions = [ws fetchDefinitions:wordToLookup useCanonical:YES];
-	
+    
 	NSUInteger count = 1;
 	for (Definition *def in definitions) {
-		if([def text] != nil) {
+        if([def text] != nil) {
 			[mergeDefinitions appendString:[NSString stringWithFormat:@"%d. %@: %@\n\r", count, 
 																						[[def partOfSpeech] name], 
 																						[def text]]];
@@ -84,6 +84,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    adViewController = nil;
     wordDefinitionView = nil;
 	wordToLookup = nil;
 }
@@ -91,6 +92,7 @@
 
 - (void)dealloc {
     [super dealloc];
+    [adViewController release];
 	[wordDefinitionView release];
 	[wordToLookup release];
 }

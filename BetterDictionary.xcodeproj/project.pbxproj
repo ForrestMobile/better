@@ -42,7 +42,7 @@
 		0B6AE3B4130A3F74001E4D07 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AE3A7130A3F74001E4D07 /* WordList.m */; };
 		0B6AE3B5130A3F74001E4D07 /* WordListService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AE3A9130A3F74001E4D07 /* WordListService.m */; };
 		0B6AE3B6130A3F74001E4D07 /* WordService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AE3AB130A3F74001E4D07 /* WordService.m */; };
-		0B6AE3C4130A40E3001E4D07 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B6AE3C3130A40E3001E4D07 /* APIKey.plist */; };
+		0B6AE3C4130A40E3001E4D07 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B6AE3C3130A40E3001E4D07 /* APIKeys.plist */; };
 		0B95D732130E33980077CA05 /* WordHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B95D730130E33980077CA05 /* WordHistoryViewController.m */; };
 		0B95D733130E33980077CA05 /* WordHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B95D731130E33980077CA05 /* WordHistoryViewController.xib */; };
 		0BB195B013249E04007D441B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB195AD13249E04007D441B /* Icon.png */; };
@@ -51,6 +51,24 @@
 		0BD954B813176C0D00286F3C /* DictionarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD954B713176C0D00286F3C /* DictionarySearchViewController.m */; };
 		0BD954BA13176C1700286F3C /* DictionarySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BD954B913176C1700286F3C /* DictionarySearchViewController.xib */; };
 		0BDBC96D131C865800CF55E8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBC96C131C865800CF55E8 /* MBProgressHUD.m */; };
+		0BFC38E5132C62F6009BFAC6 /* libAdMob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC38E4132C62F6009BFAC6 /* libAdMob.a */; };
+		0BFC38E7132C6521009BFAC6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC38E6132C6520009BFAC6 /* AudioToolbox.framework */; };
+		0BFC38EA132C653A009BFAC6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC38E9132C653A009BFAC6 /* MediaPlayer.framework */; };
+		0BFC38EC132C6545009BFAC6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC38EB132C6544009BFAC6 /* MessageUI.framework */; };
+		0BFC38EE132C654F009BFAC6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC38ED132C654F009BFAC6 /* QuartzCore.framework */; };
+		0BFC3906132C66BA009BFAC6 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC38F1132C66BA009BFAC6 /* CDataScanner.m */; };
+		0BFC3907132C66BA009BFAC6 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC38F4132C66BA009BFAC6 /* CDataScanner_Extensions.m */; };
+		0BFC3908132C66BA009BFAC6 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC38F6132C66BA009BFAC6 /* NSCharacterSet_Extensions.m */; };
+		0BFC3909132C66BA009BFAC6 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC38F8132C66BA009BFAC6 /* NSDictionary_JSONExtensions.m */; };
+		0BFC390A132C66BA009BFAC6 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC38FA132C66BA009BFAC6 /* NSScanner_Extensions.m */; };
+		0BFC390B132C66BA009BFAC6 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC38FD132C66BA009BFAC6 /* CJSONDataSerializer.m */; };
+		0BFC390C132C66BA009BFAC6 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC38FF132C66BA009BFAC6 /* CJSONDeserializer.m */; };
+		0BFC390D132C66BA009BFAC6 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC3901132C66BA009BFAC6 /* CJSONScanner.m */; };
+		0BFC390E132C66BA009BFAC6 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC3903132C66BA009BFAC6 /* CJSONSerializer.m */; };
+		0BFC390F132C66BA009BFAC6 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC3905132C66BA009BFAC6 /* CSerializedJSONData.m */; };
+		0BFC3913132C6B30009BFAC6 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC3912132C6B30009BFAC6 /* AdViewController.m */; };
+		0BFC3926132C7E70009BFAC6 /* asi-http-request LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC3925132C7E70009BFAC6 /* asi-http-request LICENSE */; };
+		0BFC392A132C7EB0009BFAC6 /* JSON LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC3929132C7EB0009BFAC6 /* JSON LICENSE */; };
 		1D3623260D0F684500981E51 /* BetterDictionaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -132,7 +150,7 @@
 		0B6AE3A9130A3F74001E4D07 /* WordListService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordListService.m; path = "External/wordnik-api/src/objectivec/main/wordnik/WordListService.m"; sourceTree = SOURCE_ROOT; };
 		0B6AE3AA130A3F74001E4D07 /* WordService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordService.h; path = "External/wordnik-api/src/objectivec/main/wordnik/WordService.h"; sourceTree = SOURCE_ROOT; };
 		0B6AE3AB130A3F74001E4D07 /* WordService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordService.m; path = "External/wordnik-api/src/objectivec/main/wordnik/WordService.m"; sourceTree = SOURCE_ROOT; };
-		0B6AE3C3130A40E3001E4D07 /* APIKey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
+		0B6AE3C3130A40E3001E4D07 /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		0B95D72F130E33980077CA05 /* WordHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordHistoryViewController.h; sourceTree = "<group>"; };
 		0B95D730130E33980077CA05 /* WordHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordHistoryViewController.m; sourceTree = "<group>"; };
 		0B95D731130E33980077CA05 /* WordHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WordHistoryViewController.xib; path = Classes/WordHistoryViewController.xib; sourceTree = "<group>"; };
@@ -145,6 +163,37 @@
 		0BDBC96B131C865800CF55E8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "External/progress-hud/MBProgressHUD.h"; sourceTree = SOURCE_ROOT; };
 		0BDBC96C131C865800CF55E8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "External/progress-hud/MBProgressHUD.m"; sourceTree = SOURCE_ROOT; };
 		0BFC38E0132C3556009BFAC6 /* BetterDictionaryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryConstants.h; sourceTree = "<group>"; };
+		0BFC38E2132C62F6009BFAC6 /* AdMobDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdMobDelegateProtocol.h; path = External/admob/AdMobDelegateProtocol.h; sourceTree = SOURCE_ROOT; };
+		0BFC38E3132C62F6009BFAC6 /* AdMobView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdMobView.h; path = External/admob/AdMobView.h; sourceTree = SOURCE_ROOT; };
+		0BFC38E4132C62F6009BFAC6 /* libAdMob.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdMob.a; path = External/admob/libAdMob.a; sourceTree = SOURCE_ROOT; };
+		0BFC38E6132C6520009BFAC6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0BFC38E9132C653A009BFAC6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0BFC38EB132C6544009BFAC6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0BFC38ED132C654F009BFAC6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0BFC38F0132C66BA009BFAC6 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDataScanner.h; path = "External/touch-json/CDataScanner.h"; sourceTree = SOURCE_ROOT; };
+		0BFC38F1132C66BA009BFAC6 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = "External/touch-json/CDataScanner.m"; sourceTree = SOURCE_ROOT; };
+		0BFC38F3132C66BA009BFAC6 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		0BFC38F4132C66BA009BFAC6 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		0BFC38F5132C66BA009BFAC6 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		0BFC38F6132C66BA009BFAC6 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		0BFC38F7132C66BA009BFAC6 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		0BFC38F8132C66BA009BFAC6 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		0BFC38F9132C66BA009BFAC6 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		0BFC38FA132C66BA009BFAC6 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		0BFC38FC132C66BA009BFAC6 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
+		0BFC38FD132C66BA009BFAC6 /* CJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
+		0BFC38FE132C66BA009BFAC6 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		0BFC38FF132C66BA009BFAC6 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		0BFC3900132C66BA009BFAC6 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		0BFC3901132C66BA009BFAC6 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		0BFC3902132C66BA009BFAC6 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		0BFC3903132C66BA009BFAC6 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		0BFC3904132C66BA009BFAC6 /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
+		0BFC3905132C66BA009BFAC6 /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
+		0BFC3911132C6B30009BFAC6 /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		0BFC3912132C6B30009BFAC6 /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		0BFC3925132C7E70009BFAC6 /* asi-http-request LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "asi-http-request LICENSE"; path = "External/asi-http-request/asi-http-request LICENSE"; sourceTree = "<group>"; };
+		0BFC3929132C7EB0009BFAC6 /* JSON LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "JSON LICENSE"; path = "External/json-framework/JSON LICENSE"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BetterDictionaryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BetterDictionaryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterDictionaryAppDelegate.m; sourceTree = "<group>"; };
@@ -164,14 +213,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFC38EE132C654F009BFAC6 /* QuartzCore.framework in Frameworks */,
+				0BFC38EC132C6545009BFAC6 /* MessageUI.framework in Frameworks */,
+				0BFC38EA132C653A009BFAC6 /* MediaPlayer.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				0BFC38E7132C6521009BFAC6 /* AudioToolbox.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */,
 				0B6AE2BB130A3F1E001E4D07 /* CFNetwork.framework in Frameworks */,
 				0B6AE2BD130A3F1E001E4D07 /* MobileCoreServices.framework in Frameworks */,
 				0B6AE2BF130A3F1E001E4D07 /* SystemConfiguration.framework in Frameworks */,
 				0B6AE2C1130A3F1F001E4D07 /* libz.1.2.3.dylib in Frameworks */,
+				0BFC38E5132C62F6009BFAC6 /* libAdMob.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +235,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0BFC38E1132C62A0009BFAC6 /* AdMob */,
+				0BFC38EF132C668D009BFAC6 /* TouchJSON */,
 				0B6AE228130A3DE4001E4D07 /* ASIHTTPRequest */,
 				0B6AE254130A3E08001E4D07 /* JSON */,
 				0BDBC966131C861E00CF55E8 /* MBProgressHUD */,
@@ -325,6 +381,81 @@
 			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		0BFC38E1132C62A0009BFAC6 /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC3910132C6B30009BFAC6 /* IBSupport */,
+				0BFC38E2132C62F6009BFAC6 /* AdMobDelegateProtocol.h */,
+				0BFC38E3132C62F6009BFAC6 /* AdMobView.h */,
+				0BFC38E4132C62F6009BFAC6 /* libAdMob.a */,
+			);
+			name = AdMob;
+			sourceTree = "<group>";
+		};
+		0BFC38EF132C668D009BFAC6 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC38F0132C66BA009BFAC6 /* CDataScanner.h */,
+				0BFC38F1132C66BA009BFAC6 /* CDataScanner.m */,
+				0BFC38F2132C66BA009BFAC6 /* Extensions */,
+				0BFC38FB132C66BA009BFAC6 /* JSON */,
+			);
+			name = TouchJSON;
+			sourceTree = "<group>";
+		};
+		0BFC38F2132C66BA009BFAC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC38F3132C66BA009BFAC6 /* CDataScanner_Extensions.h */,
+				0BFC38F4132C66BA009BFAC6 /* CDataScanner_Extensions.m */,
+				0BFC38F5132C66BA009BFAC6 /* NSCharacterSet_Extensions.h */,
+				0BFC38F6132C66BA009BFAC6 /* NSCharacterSet_Extensions.m */,
+				0BFC38F7132C66BA009BFAC6 /* NSDictionary_JSONExtensions.h */,
+				0BFC38F8132C66BA009BFAC6 /* NSDictionary_JSONExtensions.m */,
+				0BFC38F9132C66BA009BFAC6 /* NSScanner_Extensions.h */,
+				0BFC38FA132C66BA009BFAC6 /* NSScanner_Extensions.m */,
+			);
+			name = Extensions;
+			path = "External/touch-json/Extensions";
+			sourceTree = SOURCE_ROOT;
+		};
+		0BFC38FB132C66BA009BFAC6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC38FC132C66BA009BFAC6 /* CJSONDataSerializer.h */,
+				0BFC38FD132C66BA009BFAC6 /* CJSONDataSerializer.m */,
+				0BFC38FE132C66BA009BFAC6 /* CJSONDeserializer.h */,
+				0BFC38FF132C66BA009BFAC6 /* CJSONDeserializer.m */,
+				0BFC3900132C66BA009BFAC6 /* CJSONScanner.h */,
+				0BFC3901132C66BA009BFAC6 /* CJSONScanner.m */,
+				0BFC3902132C66BA009BFAC6 /* CJSONSerializer.h */,
+				0BFC3903132C66BA009BFAC6 /* CJSONSerializer.m */,
+				0BFC3904132C66BA009BFAC6 /* CSerializedJSONData.h */,
+				0BFC3905132C66BA009BFAC6 /* CSerializedJSONData.m */,
+			);
+			name = JSON;
+			path = "External/touch-json/JSON";
+			sourceTree = SOURCE_ROOT;
+		};
+		0BFC3910132C6B30009BFAC6 /* IBSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC3911132C6B30009BFAC6 /* AdViewController.h */,
+				0BFC3912132C6B30009BFAC6 /* AdViewController.m */,
+			);
+			name = IBSupport;
+			path = External/admob/IBSupport;
+			sourceTree = SOURCE_ROOT;
+		};
+		0BFC3924132C7E20009BFAC6 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC3925132C7E70009BFAC6 /* asi-http-request LICENSE */,
+				0BFC3929132C7EB0009BFAC6 /* JSON LICENSE */,
+			);
+			name = Licenses;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,7 +489,8 @@
 			isa = PBXGroup;
 			children = (
 				0B6AE3C1130A40C3001E4D07 /* Images */,
-				0B6AE3C3130A40E3001E4D07 /* APIKey.plist */,
+				0BFC3924132C7E20009BFAC6 /* Licenses */,
+				0B6AE3C3130A40E3001E4D07 /* APIKeys.plist */,
 				8D1107310486CEB800E47090 /* BetterDictionary-Info.plist */,
 				2819305F112F816700ECF9B4 /* BetterDictionary.xcdatamodeld */,
 				0BD954B913176C1700286F3C /* DictionarySearchViewController.xib */,
@@ -372,12 +504,16 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BFC38E6132C6520009BFAC6 /* AudioToolbox.framework */,
 				0B6AE2BA130A3F1E001E4D07 /* CFNetwork.framework */,
 				28D801B30F44B63D00FB423F /* CoreData.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				0B6AE2C0130A3F1F001E4D07 /* libz.1.2.3.dylib */,
+				0BFC38E9132C653A009BFAC6 /* MediaPlayer.framework */,
+				0BFC38EB132C6544009BFAC6 /* MessageUI.framework */,
 				0B6AE2BC130A3F1E001E4D07 /* MobileCoreServices.framework */,
+				0BFC38ED132C654F009BFAC6 /* QuartzCore.framework */,
 				0B6AE2BE130A3F1E001E4D07 /* SystemConfiguration.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
@@ -437,13 +573,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				0B6AE3C4130A40E3001E4D07 /* APIKey.plist in Resources */,
+				0B6AE3C4130A40E3001E4D07 /* APIKeys.plist in Resources */,
 				0B95D733130E33980077CA05 /* WordHistoryViewController.xib in Resources */,
 				0B1397F613136FF80022BB56 /* WordDefinitionViewController.xib in Resources */,
 				0BD954BA13176C1700286F3C /* DictionarySearchViewController.xib in Resources */,
 				0BB195B013249E04007D441B /* Icon.png in Resources */,
 				0BB195B213249E0A007D441B /* iTunesArtwork in Resources */,
 				0BB195CB13249FBA007D441B /* Icon@2x.png in Resources */,
+				0BFC3926132C7E70009BFAC6 /* asi-http-request LICENSE in Resources */,
+				0BFC392A132C7EB0009BFAC6 /* JSON LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +628,17 @@
 				0B1397F513136FF80022BB56 /* WordDefinitionViewController.m in Sources */,
 				0BD954B813176C0D00286F3C /* DictionarySearchViewController.m in Sources */,
 				0BDBC96D131C865800CF55E8 /* MBProgressHUD.m in Sources */,
+				0BFC3906132C66BA009BFAC6 /* CDataScanner.m in Sources */,
+				0BFC3907132C66BA009BFAC6 /* CDataScanner_Extensions.m in Sources */,
+				0BFC3908132C66BA009BFAC6 /* NSCharacterSet_Extensions.m in Sources */,
+				0BFC3909132C66BA009BFAC6 /* NSDictionary_JSONExtensions.m in Sources */,
+				0BFC390A132C66BA009BFAC6 /* NSScanner_Extensions.m in Sources */,
+				0BFC390B132C66BA009BFAC6 /* CJSONDataSerializer.m in Sources */,
+				0BFC390C132C66BA009BFAC6 /* CJSONDeserializer.m in Sources */,
+				0BFC390D132C66BA009BFAC6 /* CJSONScanner.m in Sources */,
+				0BFC390E132C66BA009BFAC6 /* CJSONSerializer.m in Sources */,
+				0BFC390F132C66BA009BFAC6 /* CSerializedJSONData.m in Sources */,
+				0BFC3913132C6B30009BFAC6 /* AdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +655,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BetterDictionary_Prefix.pch;
 				INFOPLIST_FILE = "BetterDictionary-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/admob\"",
+				);
 				PRODUCT_NAME = BetterDictionary;
 			};
 			name = Debug;
@@ -518,6 +671,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BetterDictionary_Prefix.pch;
 				INFOPLIST_FILE = "BetterDictionary-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/admob\"",
+				);
 				PRODUCT_NAME = BetterDictionary;
 				VALIDATE_PRODUCT = YES;
 			};

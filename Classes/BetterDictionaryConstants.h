@@ -6,6 +6,10 @@
 //  Copyright 2011 Weinert Works. All rights reserved.
 //
 
+// API Keys
+#define kWordNikKey     @"WORDNIK_API_KEY"
+#define kAdMobKey       @"ADMOB_PUBLISHER_ID"
+
 // Core Data Keys
 #define kEntityName     @"Word"
 #define kWordKey        @"word"

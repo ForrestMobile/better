@@ -7,9 +7,9 @@
 //
 
 #import "BetterDictionaryAppDelegate.h"
-#import "ApplicationConstants.h"
 #import "BetterDictionaryConstants.h"
-
+#import "ApplicationConstants.h"
+#import "AdViewController.h"
 
 @implementation BetterDictionaryAppDelegate
 
@@ -21,10 +21,11 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"APIKey" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"APIKeys" ofType:@"plist"];
 	NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
 	
-	API_KEY = [[dict objectForKey:@"API_KEY"] retain];
+	API_KEY = [[dict objectForKey:kWordNikKey] retain];
+ //   ADMOB_PRODUCT_ID = [[dict objectForKey:kAdMobKey] retain];
 	
 	[dict release];
 	
@@ -207,6 +208,9 @@
     
 	[tabBarController release];
     [window release];
+    
+    [API_KEY release];
+    [ADMOB_PRODUCT_ID release];
     [super dealloc];
 }
 
