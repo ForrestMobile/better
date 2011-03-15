@@ -671,6 +671,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BetterDictionary_Prefix.pch;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "BetterDictionary-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,18 +686,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: James Weinert";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Weinert";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BetterDictionary_Prefix.pch;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "BetterDictionary-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External/admob\"",
 				);
 				PRODUCT_NAME = studydictionary;
-				PROVISIONING_PROFILE = "36AB78F2-3FD2-4B41-AF31-70EAAFBD0240";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "36AB78F2-3FD2-4B41-AF31-70EAAFBD0240";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -724,7 +726,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "10B0E726-6F45-4252-98AF-CEAEBDA23469";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "36AB78F2-3FD2-4B41-AF31-70EAAFBD0240";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
