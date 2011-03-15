@@ -188,9 +188,9 @@
 }
 
 - (void)viewDidUnload {
-	table = nil;
-	wordHistory = nil;
-	wordLookupCount = nil;
+	self.table = nil;
+	self.wordHistory = nil;
+	self.wordLookupCount = nil;
 }
 
 

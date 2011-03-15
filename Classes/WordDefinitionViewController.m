@@ -84,9 +84,9 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    adViewController = nil;
-    wordDefinitionView = nil;
-	wordToLookup = nil;
+    self.adViewController = nil;
+    self.wordDefinitionView = nil;
+	self.wordToLookup = nil;
 }
 
 
