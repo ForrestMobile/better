@@ -17,6 +17,11 @@
 		0B0039D11347C28400606EF3 /* WordHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B0039C91347C28400606EF3 /* WordHistoryViewController.xib */; };
 		0B0039D31347C50800606EF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0039D21347C50800606EF3 /* CoreData.framework */; };
 		0B003A391347C60700606EF3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B003A381347C60700606EF3 /* CoreFoundation.framework */; };
+		0B184CD51352556F00B111C9 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B184CD01352556F00B111C9 /* Icon-Small.png */; };
+		0B184CD61352556F00B111C9 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B184CD11352556F00B111C9 /* Icon-Small@2x.png */; };
+		0B184CD71352556F00B111C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B184CD21352556F00B111C9 /* Icon.png */; };
+		0B184CD81352556F00B111C9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B184CD31352556F00B111C9 /* Icon@2x.png */; };
+		0B184CD91352556F00B111C9 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 0B184CD41352556F00B111C9 /* iTunesArtwork */; };
 		0B3057491347C187003C0997 /* WordnikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3057481347C187003C0997 /* WordnikUI.framework */; };
 		0B53F2F6134D6E5F00B61B41 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53F2F2134D6E5F00B61B41 /* book.png */; };
 		0B53F2F7134D6E5F00B61B41 /* book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53F2F3134D6E5F00B61B41 /* book@2x.png */; };
@@ -54,6 +59,11 @@
 		0B0039C91347C28400606EF3 /* WordHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WordHistoryViewController.xib; path = Classes/WordHistoryViewController.xib; sourceTree = "<group>"; };
 		0B0039D21347C50800606EF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0B003A381347C60700606EF3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0B184CD01352556F00B111C9 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Images/Icons/Icon-Small.png"; sourceTree = "<group>"; };
+		0B184CD11352556F00B111C9 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Images/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		0B184CD21352556F00B111C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icons/Icon.png; sourceTree = "<group>"; };
+		0B184CD31352556F00B111C9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icons/Icon@2x.png"; sourceTree = "<group>"; };
+		0B184CD41352556F00B111C9 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Images/Icons/iTunesArtwork; sourceTree = "<group>"; };
 		0B3057481347C187003C0997 /* WordnikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WordnikUI.framework; path = "External/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework/WordnikUI.framework"; sourceTree = "<group>"; };
 		0B53F2F2134D6E5F00B61B41 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book.png; path = Images/TabBar/book.png; sourceTree = "<group>"; };
 		0B53F2F3134D6E5F00B61B41 /* book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "book@2x.png"; path = "Images/TabBar/book@2x.png"; sourceTree = "<group>"; };
@@ -119,9 +129,22 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		0B184CCE1352551900B111C9 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0B184CD01352556F00B111C9 /* Icon-Small.png */,
+				0B184CD11352556F00B111C9 /* Icon-Small@2x.png */,
+				0B184CD21352556F00B111C9 /* Icon.png */,
+				0B184CD31352556F00B111C9 /* Icon@2x.png */,
+				0B184CD41352556F00B111C9 /* iTunesArtwork */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		0B53F2EF134D6E1600B61B41 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0B184CCE1352551900B111C9 /* Icons */,
 				0BE2A8C113519D4000188E66 /* SVProgressHUD */,
 				0B53F2F1134D6E2400B61B41 /* TabBar */,
 			);
@@ -288,6 +311,11 @@
 				0BE2A8C713519D6000188E66 /* svhud-error@2x.png in Resources */,
 				0BE2A8C813519D6000188E66 /* svhud-success.png in Resources */,
 				0BE2A8C913519D6000188E66 /* svhud-success@2x.png in Resources */,
+				0B184CD51352556F00B111C9 /* Icon-Small.png in Resources */,
+				0B184CD61352556F00B111C9 /* Icon-Small@2x.png in Resources */,
+				0B184CD71352556F00B111C9 /* Icon.png in Resources */,
+				0B184CD81352556F00B111C9 /* Icon@2x.png in Resources */,
+				0B184CD91352556F00B111C9 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +346,6 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Wordnik WordKit 1.0/iOS Framework\"",
-					"\"$(SRCROOT)/../../Code/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
 					"\"$(SRCROOT)/External/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -327,10 +353,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = studydictionary_Prefix.pch;
 				INFOPLIST_FILE = "studydictionary-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/External/admob\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = studydictionary;
 			};
@@ -343,17 +366,12 @@
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../Wordnik WordKit 1.0/iOS Framework\"",
-					"\"$(SRCROOT)/../../Code/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
 					"\"$(SRCROOT)/External/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = studydictionary_Prefix.pch;
 				INFOPLIST_FILE = "studydictionary-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/External/admob\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = studydictionary;
 				VALIDATE_PRODUCT = YES;
 			};
