@@ -24,7 +24,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	[self updateDefinition];
+    if ([wordDefinitionView.text length] == 0) {
+        [self updateDefinition];
+    }
 }
 
 - (void)updateDefinition {
@@ -52,18 +54,25 @@
             /* Definitions */
             if (word.definitions != nil && word.definitions.count > 0) {
                 
+                NSString *partOfSpeech = @"";
                 for (WNDefinitionList *list in word.definitions) {
                     if (list.definitions.count == 0)
                         continue;
+                    
                     NSUInteger count = 1;
                     for (WNDefinition *def in list.definitions) {
+                        if (![partOfSpeech isEqualToString:def.partOfSpeech.name]) {
+                            partOfSpeech = def.partOfSpeech.name;
+                            [wordText appendString:[NSString stringWithFormat:@"-%@\n", partOfSpeech]];
+                        }
+                        
                         [wordText appendString:[NSString stringWithFormat:@"%d. ", count]];
                         count++;
                         
                         if (def.extendedText != nil) {
-                            [wordText appendString: def.extendedText];
+                            [wordText appendString:def.extendedText];
                         } else {
-                            [wordText appendString: def.text];
+                            [wordText appendString:def.text];
                         }
                         
                         [wordText appendString: @"\n\n"];
