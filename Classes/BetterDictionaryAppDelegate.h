@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+#import <Wordnik/WNClient.h>
+
 @interface BetterDictionaryAppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;
@@ -18,6 +20,9 @@
     NSManagedObjectContext *managedObjectContext_;
     NSManagedObjectModel *managedObjectModel_;
     NSPersistentStoreCoordinator *persistentStoreCoordinator_;
+    
+    WNClient *wordnikClient_;
+    NSString *wordnikAPIKey;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -26,6 +31,9 @@
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (nonatomic, retain, readonly) WNClient *wordnikClient_;
+@property (nonatomic, retain, readonly) NSString *wordnikAPIKey;
 
 - (NSURL *)applicationDocumentsDirectory;
 - (void)saveContext;

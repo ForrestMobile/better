@@ -15,6 +15,7 @@
 
 @synthesize window;
 @synthesize tabBarController;
+@synthesize wordnikAPIKey;
 
 
 #pragma mark -
@@ -24,7 +25,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"APIKeys" ofType:@"plist"];
 	NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
 	
-	API_KEY = [[dict objectForKey:kWordNikKey] retain];
+	wordnikAPIKey = [[dict objectForKey:kWordNikKey] retain];
     ADMOB_PRODUCT_ID = [[dict objectForKey:kAdMobKey] retain];
 	
 	[dict release];
@@ -94,6 +95,37 @@
         } 
     }
 }    
+
+
+#pragma mark -
+#pragma mark Wordnik Client
+
+- (WNClient *)wordnikClient {
+    if (wordnikClient_ != nil) {
+        return wordnikClient_;
+    }
+    
+    WNClientConfig *config = [WNClientConfig configWithAPIKey:wordnikAPIKey ];
+    wordnikClient_ = [[WNClient alloc] initWithClientConfig:config];
+    
+    /* Fetch API usage information (for testing purposes). */
+    [wordnikClient_ requestAPIUsageStatusWithCompletionBlock: ^(WNClientAPIUsageStatus *status, NSError *error) {
+        if (error != nil) {
+            NSLog(@"Usage request failed: %@", error);
+            return;
+        }
+        
+        NSMutableString *output = [NSMutableString string];
+        [output appendFormat: @"Expires at: %@\n", status.expirationDate];
+        [output appendFormat: @"Reset at: %@\n", status.resetDate];
+        [output appendFormat: @"Total calls permitted: %ld\n", (long) status.totalPermittedRequestCount];
+        [output appendFormat: @"Total calls remaining: %ld\n", (long) status.remainingPermittedRequestCount];
+        
+        NSLog(@"API Usage:\n%@", output);
+    }];
+    
+    return wordnikClient_;
+}
 
 
 #pragma mark -
@@ -189,10 +221,12 @@
     [managedObjectModel_ release];
     [persistentStoreCoordinator_ release];
     
+    [wordnikClient_ release];
+    
 	[tabBarController release];
     [window release];
     
-    [API_KEY release];
+    [wordnikAPIKey release];
     [ADMOB_PRODUCT_ID release];
     [super dealloc];
 }

@@ -1,12 +1,9 @@
-[submodule "External/wordnik-api"]
-	path = External/wordnik-api
-	url = git@github.com:countingtoten/api-examples.git
-[submodule "External/asi-http-request"]
-	path = External/asi-http-request
-	url = https://github.com/pokeb/asi-http-request.git
-[submodule "External/json-framework"]
-	path = External/json-framework
-	url = https://github.com/stig/json-framework.git
 [submodule "External/progress-hud"]
 	path = External/progress-hud
 	url = https://github.com/jdg/MBProgressHUD.git
+[submodule "External/wordkit"]
+	path = External/wordkit
+	url = https://github.com/wordnik/wordkit.git
+[submodule "External/SVProgressHUD"]
+	path = External/SVProgressHUD
+	url = https://github.com/samvermette/SVProgressHUD.git

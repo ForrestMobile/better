@@ -25,4 +25,6 @@
 - (void)updateDefinition;
 - (void)updateDefinitionText:(NSString *)definition;
 
+- (void) didPressLookupButton;
+
 @end
