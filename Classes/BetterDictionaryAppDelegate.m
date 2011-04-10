@@ -8,14 +8,13 @@
 
 #import "BetterDictionaryAppDelegate.h"
 #import "BetterDictionaryConstants.h"
-#import "ApplicationConstants.h"
-#import "AdViewController.h"
 
 @implementation BetterDictionaryAppDelegate
 
 @synthesize window;
 @synthesize tabBarController;
 @synthesize wordnikAPIKey;
+@synthesize wordnikClient_;
 
 
 #pragma mark -
@@ -26,11 +25,10 @@
 	NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
 	
 	wordnikAPIKey = [[dict objectForKey:kWordNikKey] retain];
-    ADMOB_PRODUCT_ID = [[dict objectForKey:kAdMobKey] retain];
+ //   ADMOB_PRODUCT_ID = [[dict objectForKey:kAdMobKey] retain];
 	
 	[dict release];
 	
-    // Override point for customization after application launch.
     [self.window addSubview:self.tabBarController.view];
     [self.window makeKeyAndVisible];
     
@@ -227,7 +225,7 @@
     [window release];
     
     [wordnikAPIKey release];
-    [ADMOB_PRODUCT_ID release];
+//    [ADMOB_PRODUCT_ID release];
     [super dealloc];
 }
 

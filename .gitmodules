@@ -1,6 +1,3 @@
-[submodule "External/progress-hud"]
-	path = External/progress-hud
-	url = https://github.com/jdg/MBProgressHUD.git
 [submodule "External/wordkit"]
 	path = External/wordkit
 	url = https://github.com/wordnik/wordkit.git

@@ -1,7 +1,8 @@
-APIKeys.plist
+Classes/BetterDictionaryAPIConstants.h
 Images/*
 External/admob/*
 External/touch-json/*
+Frameworks/*
 
 #Xcode
 build/*

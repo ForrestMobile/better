@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-
+#import <Wordnik/Wordnik.h>
 #import <Wordnik/WNClient.h>
 
 @interface BetterDictionaryAppDelegate : NSObject <UIApplicationDelegate> {

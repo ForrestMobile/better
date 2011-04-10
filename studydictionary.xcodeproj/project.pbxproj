@@ -7,83 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B3041F31347BFB9004F2D4E /* WordnikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3041F21347BFB9004F2D4E /* WordnikUI.framework */; };
+		0B0039B81347C22100606EF3 /* BetterDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039B51347C22100606EF3 /* BetterDictionary.xcdatamodeld */; };
+		0B0039BC1347C24100606EF3 /* BetterDictionaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039BB1347C24100606EF3 /* BetterDictionaryAppDelegate.m */; };
+		0B0039CC1347C28400606EF3 /* DictionarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039C21347C28400606EF3 /* DictionarySearchViewController.m */; };
+		0B0039CD1347C28400606EF3 /* DictionarySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B0039C31347C28400606EF3 /* DictionarySearchViewController.xib */; };
+		0B0039CE1347C28400606EF3 /* WordDefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039C51347C28400606EF3 /* WordDefinitionViewController.m */; };
+		0B0039CF1347C28400606EF3 /* WordDefinitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B0039C61347C28400606EF3 /* WordDefinitionViewController.xib */; };
+		0B0039D01347C28400606EF3 /* WordHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039C81347C28400606EF3 /* WordHistoryViewController.m */; };
+		0B0039D11347C28400606EF3 /* WordHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B0039C91347C28400606EF3 /* WordHistoryViewController.xib */; };
+		0B0039D31347C50800606EF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0039D21347C50800606EF3 /* CoreData.framework */; };
+		0B003A391347C60700606EF3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B003A381347C60700606EF3 /* CoreFoundation.framework */; };
+		0B3057491347C187003C0997 /* WordnikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3057481347C187003C0997 /* WordnikUI.framework */; };
+		0B53F2F6134D6E5F00B61B41 /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53F2F2134D6E5F00B61B41 /* book.png */; };
+		0B53F2F7134D6E5F00B61B41 /* book@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53F2F3134D6E5F00B61B41 /* book@2x.png */; };
+		0B53F2F8134D6E5F00B61B41 /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53F2F4134D6E5F00B61B41 /* notepad.png */; };
+		0B53F2F9134D6E5F00B61B41 /* notepad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53F2F5134D6E5F00B61B41 /* notepad@2x.png */; };
+		0BE2A8B613518E5F00188E66 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2A8B513518E5F00188E66 /* SVProgressHUD.m */; };
+		0BE2A8C013518F5C00188E66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE2A8BF13518F5C00188E66 /* QuartzCore.framework */; };
+		0BE2A8C613519D6000188E66 /* svhud-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2A8C213519D6000188E66 /* svhud-error.png */; };
+		0BE2A8C713519D6000188E66 /* svhud-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2A8C313519D6000188E66 /* svhud-error@2x.png */; };
+		0BE2A8C813519D6000188E66 /* svhud-success.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2A8C413519D6000188E66 /* svhud-success.png */; };
+		0BE2A8C913519D6000188E66 /* svhud-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2A8C513519D6000188E66 /* svhud-success@2x.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		EA4C9A18132F5B0400B76158 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C99F6132F5B0400B76158 /* MainWindow.xib */; };
-		EA4C9A19132F5B0400B76158 /* WNDemoAllWordListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C99F8132F5B0400B76158 /* WNDemoAllWordListsViewController.m */; };
-		EA4C9A1A132F5B0400B76158 /* WNDemoAllWordListsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C99F9132F5B0400B76158 /* WNDemoAllWordListsViewController.xib */; };
-		EA4C9A1B132F5B0400B76158 /* WNDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C99FB132F5B0400B76158 /* WNDemoAppDelegate.m */; };
-		EA4C9A1C132F5B0400B76158 /* WNDemoAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C99FC132F5B0400B76158 /* WNDemoAppViewController.xib */; };
-		EA4C9A1D132F5B0400B76158 /* WNDemoAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C99FE132F5B0400B76158 /* WNDemoAuthViewController.m */; };
-		EA4C9A1E132F5B0400B76158 /* WNDemoAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C99FF132F5B0400B76158 /* WNDemoAuthViewController.xib */; };
-		EA4C9A1F132F5B0400B76158 /* WNDemoAutocompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A01132F5B0400B76158 /* WNDemoAutocompleteViewController.m */; };
-		EA4C9A20132F5B0400B76158 /* WNDemoAutocompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A02132F5B0400B76158 /* WNDemoAutocompleteViewController.xib */; };
-		EA4C9A21132F5B0400B76158 /* WNDemoCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A04132F5B0400B76158 /* WNDemoCatalogViewController.m */; };
-		EA4C9A22132F5B0400B76158 /* WNDemoCatalogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A05132F5B0400B76158 /* WNDemoCatalogViewController.xib */; };
-		EA4C9A23132F5B0400B76158 /* WNDemoCreateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A07132F5B0400B76158 /* WNDemoCreateListViewController.m */; };
-		EA4C9A24132F5B0400B76158 /* WNDemoCreateListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A08132F5B0400B76158 /* WNDemoCreateListViewController.xib */; };
-		EA4C9A25132F5B0400B76158 /* WNDemoDeleteWordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A0A132F5B0400B76158 /* WNDemoDeleteWordListViewController.m */; };
-		EA4C9A26132F5B0400B76158 /* WNDemoDeleteWordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A0B132F5B0400B76158 /* WNDemoDeleteWordListViewController.xib */; };
-		EA4C9A27132F5B0400B76158 /* WNDemoModifyWordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A0D132F5B0400B76158 /* WNDemoModifyWordListViewController.m */; };
-		EA4C9A28132F5B0400B76158 /* WNDemoModifyWordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A0E132F5B0400B76158 /* WNDemoModifyWordListViewController.xib */; };
-		EA4C9A29132F5B0400B76158 /* WNDemoRandomWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A10132F5B0400B76158 /* WNDemoRandomWordsViewController.m */; };
-		EA4C9A2A132F5B0400B76158 /* WNDemoRandomWordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A11132F5B0400B76158 /* WNDemoRandomWordsViewController.xib */; };
-		EA4C9A2B132F5B0400B76158 /* WNDemoWordInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A13132F5B0400B76158 /* WNDemoWordInfoViewController.m */; };
-		EA4C9A2C132F5B0400B76158 /* WNDemoWordInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A14132F5B0400B76158 /* WNDemoWordInfoViewController.xib */; };
-		EA4C9A2D132F5B0400B76158 /* WNDemoWordOfTheDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4C9A16132F5B0400B76158 /* WNDemoWordOfTheDayViewController.m */; };
-		EA4C9A2E132F5B0400B76158 /* WNDemoWordOfTheDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4C9A17132F5B0400B76158 /* WNDemoWordOfTheDayViewController.xib */; };
 		EA4C9A53132F5BE700B76158 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4C9A52132F5BE700B76158 /* CoreText.framework */; };
 		EA4C9A55132F5BE700B76158 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4C9A54132F5BE700B76158 /* libsqlite3.dylib */; };
 		EA4C9A5B132F5C0E00B76158 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4C9A5A132F5C0E00B76158 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B3041F21347BFB9004F2D4E /* WordnikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WordnikUI.framework; path = "../../Code/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework/WordnikUI.framework"; sourceTree = "<group>"; };
+		0B0039B61347C22100606EF3 /* BetterDictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetterDictionary.xcdatamodel; sourceTree = "<group>"; };
+		0B0039BA1347C24100606EF3 /* BetterDictionaryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAppDelegate.h; sourceTree = "<group>"; };
+		0B0039BB1347C24100606EF3 /* BetterDictionaryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterDictionaryAppDelegate.m; sourceTree = "<group>"; };
+		0B0039BD1347C28300606EF3 /* BetterDictionaryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryConstants.h; sourceTree = "<group>"; };
+		0B0039C11347C28400606EF3 /* DictionarySearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionarySearchViewController.h; sourceTree = "<group>"; };
+		0B0039C21347C28400606EF3 /* DictionarySearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionarySearchViewController.m; sourceTree = "<group>"; };
+		0B0039C31347C28400606EF3 /* DictionarySearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DictionarySearchViewController.xib; path = Classes/DictionarySearchViewController.xib; sourceTree = "<group>"; };
+		0B0039C41347C28400606EF3 /* WordDefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDefinitionViewController.h; sourceTree = "<group>"; };
+		0B0039C51347C28400606EF3 /* WordDefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordDefinitionViewController.m; sourceTree = "<group>"; };
+		0B0039C61347C28400606EF3 /* WordDefinitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WordDefinitionViewController.xib; path = Classes/WordDefinitionViewController.xib; sourceTree = "<group>"; };
+		0B0039C71347C28400606EF3 /* WordHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordHistoryViewController.h; sourceTree = "<group>"; };
+		0B0039C81347C28400606EF3 /* WordHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordHistoryViewController.m; sourceTree = "<group>"; };
+		0B0039C91347C28400606EF3 /* WordHistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WordHistoryViewController.xib; path = Classes/WordHistoryViewController.xib; sourceTree = "<group>"; };
+		0B0039D21347C50800606EF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0B003A381347C60700606EF3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0B3057481347C187003C0997 /* WordnikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WordnikUI.framework; path = "External/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework/WordnikUI.framework"; sourceTree = "<group>"; };
+		0B53F2F2134D6E5F00B61B41 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book.png; path = Images/TabBar/book.png; sourceTree = "<group>"; };
+		0B53F2F3134D6E5F00B61B41 /* book@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "book@2x.png"; path = "Images/TabBar/book@2x.png"; sourceTree = "<group>"; };
+		0B53F2F4134D6E5F00B61B41 /* notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notepad.png; path = Images/TabBar/notepad.png; sourceTree = "<group>"; };
+		0B53F2F5134D6E5F00B61B41 /* notepad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notepad@2x.png"; path = "Images/TabBar/notepad@2x.png"; sourceTree = "<group>"; };
+		0BE2A8B413518E5F00188E66 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = External/SVProgressHUD/SVProgressHUD/SVProgressHUD.h; sourceTree = SOURCE_ROOT; };
+		0BE2A8B513518E5F00188E66 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = External/SVProgressHUD/SVProgressHUD/SVProgressHUD.m; sourceTree = SOURCE_ROOT; };
+		0BE2A8BF13518F5C00188E66 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0BE2A8C213519D6000188E66 /* svhud-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "svhud-error.png"; path = "External/SVProgressHUD/SVProgressHUD/Ressources/svhud-error.png"; sourceTree = "<group>"; };
+		0BE2A8C313519D6000188E66 /* svhud-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "svhud-error@2x.png"; path = "External/SVProgressHUD/SVProgressHUD/Ressources/svhud-error@2x.png"; sourceTree = "<group>"; };
+		0BE2A8C413519D6000188E66 /* svhud-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "svhud-success.png"; path = "External/SVProgressHUD/SVProgressHUD/Ressources/svhud-success.png"; sourceTree = "<group>"; };
+		0BE2A8C513519D6000188E66 /* svhud-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "svhud-success@2x.png"; path = "External/SVProgressHUD/SVProgressHUD/Ressources/svhud-success@2x.png"; sourceTree = "<group>"; };
+		0BF42CB1134FCD24003844D2 /* BetterDictionaryAPIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAPIConstants.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* WNDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WNDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* studydictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studydictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* WNDemoApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoApp_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* WNDemoApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WNDemoApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* studydictionary_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = studydictionary_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* studydictionary-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "studydictionary-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		EA4C99F6132F5B0400B76158 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		EA4C99F7132F5B0400B76158 /* WNDemoAllWordListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoAllWordListsViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C99F8132F5B0400B76158 /* WNDemoAllWordListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoAllWordListsViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C99F9132F5B0400B76158 /* WNDemoAllWordListsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoAllWordListsViewController.xib; path = ../WNDemoAllWordListsViewController.xib; sourceTree = "<group>"; };
-		EA4C99FA132F5B0400B76158 /* WNDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoAppDelegate.h; sourceTree = SOURCE_ROOT; };
-		EA4C99FB132F5B0400B76158 /* WNDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		EA4C99FC132F5B0400B76158 /* WNDemoAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoAppViewController.xib; path = ../WNDemoAppViewController.xib; sourceTree = "<group>"; };
-		EA4C99FD132F5B0400B76158 /* WNDemoAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoAuthViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C99FE132F5B0400B76158 /* WNDemoAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoAuthViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C99FF132F5B0400B76158 /* WNDemoAuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoAuthViewController.xib; path = ../WNDemoAuthViewController.xib; sourceTree = "<group>"; };
-		EA4C9A00132F5B0400B76158 /* WNDemoAutocompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoAutocompleteViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A01132F5B0400B76158 /* WNDemoAutocompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoAutocompleteViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A02132F5B0400B76158 /* WNDemoAutocompleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoAutocompleteViewController.xib; path = ../WNDemoAutocompleteViewController.xib; sourceTree = "<group>"; };
-		EA4C9A03132F5B0400B76158 /* WNDemoCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoCatalogViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A04132F5B0400B76158 /* WNDemoCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoCatalogViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A05132F5B0400B76158 /* WNDemoCatalogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoCatalogViewController.xib; path = ../WNDemoCatalogViewController.xib; sourceTree = "<group>"; };
-		EA4C9A06132F5B0400B76158 /* WNDemoCreateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoCreateListViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A07132F5B0400B76158 /* WNDemoCreateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoCreateListViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A08132F5B0400B76158 /* WNDemoCreateListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoCreateListViewController.xib; path = ../WNDemoCreateListViewController.xib; sourceTree = "<group>"; };
-		EA4C9A09132F5B0400B76158 /* WNDemoDeleteWordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoDeleteWordListViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A0A132F5B0400B76158 /* WNDemoDeleteWordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoDeleteWordListViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A0B132F5B0400B76158 /* WNDemoDeleteWordListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoDeleteWordListViewController.xib; path = ../WNDemoDeleteWordListViewController.xib; sourceTree = "<group>"; };
-		EA4C9A0C132F5B0400B76158 /* WNDemoModifyWordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoModifyWordListViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A0D132F5B0400B76158 /* WNDemoModifyWordListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoModifyWordListViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A0E132F5B0400B76158 /* WNDemoModifyWordListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoModifyWordListViewController.xib; path = ../WNDemoModifyWordListViewController.xib; sourceTree = "<group>"; };
-		EA4C9A0F132F5B0400B76158 /* WNDemoRandomWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoRandomWordsViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A10132F5B0400B76158 /* WNDemoRandomWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoRandomWordsViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A11132F5B0400B76158 /* WNDemoRandomWordsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WNDemoRandomWordsViewController.xib; sourceTree = SOURCE_ROOT; };
-		EA4C9A12132F5B0400B76158 /* WNDemoWordInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoWordInfoViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A13132F5B0400B76158 /* WNDemoWordInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoWordInfoViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A14132F5B0400B76158 /* WNDemoWordInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoWordInfoViewController.xib; path = ../WNDemoWordInfoViewController.xib; sourceTree = "<group>"; };
-		EA4C9A15132F5B0400B76158 /* WNDemoWordOfTheDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNDemoWordOfTheDayViewController.h; sourceTree = SOURCE_ROOT; };
-		EA4C9A16132F5B0400B76158 /* WNDemoWordOfTheDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNDemoWordOfTheDayViewController.m; sourceTree = SOURCE_ROOT; };
-		EA4C9A17132F5B0400B76158 /* WNDemoWordOfTheDayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WNDemoWordOfTheDayViewController.xib; path = ../WNDemoWordOfTheDayViewController.xib; sourceTree = "<group>"; };
-		EA4C9A3F132F5B6500B76158 /* WNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNAdditions.h; sourceTree = "<group>"; };
 		EA4C9A52132F5BE700B76158 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		EA4C9A54132F5BE700B76158 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EA4C9A5A132F5C0E00B76158 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -94,7 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3041F31347BFB9004F2D4E /* WordnikUI.framework in Frameworks */,
+				0BE2A8C013518F5C00188E66 /* QuartzCore.framework in Frameworks */,
+				0B003A391347C60700606EF3 /* CoreFoundation.framework in Frameworks */,
+				0B0039D31347C50800606EF3 /* CoreData.framework in Frameworks */,
+				0B3057491347C187003C0997 /* WordnikUI.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -110,18 +104,73 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EA7BD3C9132F5CE4008611AE /* Main Catalog View */,
-				EA4C99FA132F5B0400B76158 /* WNDemoAppDelegate.h */,
-				EA4C99FB132F5B0400B76158 /* WNDemoAppDelegate.m */,
-				EA4C99FC132F5B0400B76158 /* WNDemoAppViewController.xib */,
+				0BA5E76E134FB92200C55664 /* External */,
+				0B0039BA1347C24100606EF3 /* BetterDictionaryAppDelegate.h */,
+				0B0039BB1347C24100606EF3 /* BetterDictionaryAppDelegate.m */,
+				0B0039BD1347C28300606EF3 /* BetterDictionaryConstants.h */,
+				0BF42CB1134FCD24003844D2 /* BetterDictionaryAPIConstants.h */,
+				0B0039C11347C28400606EF3 /* DictionarySearchViewController.h */,
+				0B0039C21347C28400606EF3 /* DictionarySearchViewController.m */,
+				0B0039C41347C28400606EF3 /* WordDefinitionViewController.h */,
+				0B0039C51347C28400606EF3 /* WordDefinitionViewController.m */,
+				0B0039C71347C28400606EF3 /* WordHistoryViewController.h */,
+				0B0039C81347C28400606EF3 /* WordHistoryViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0B53F2EF134D6E1600B61B41 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0BE2A8C113519D4000188E66 /* SVProgressHUD */,
+				0B53F2F1134D6E2400B61B41 /* TabBar */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0B53F2F1134D6E2400B61B41 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0B53F2F2134D6E5F00B61B41 /* book.png */,
+				0B53F2F3134D6E5F00B61B41 /* book@2x.png */,
+				0B53F2F4134D6E5F00B61B41 /* notepad.png */,
+				0B53F2F5134D6E5F00B61B41 /* notepad@2x.png */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		0BA5E76E134FB92200C55664 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				0BE2A8B313518E4D00188E66 /* SVProgressHUD */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		0BE2A8B313518E4D00188E66 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0BE2A8B413518E5F00188E66 /* SVProgressHUD.h */,
+				0BE2A8B513518E5F00188E66 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		0BE2A8C113519D4000188E66 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0BE2A8C213519D6000188E66 /* svhud-error.png */,
+				0BE2A8C313519D6000188E66 /* svhud-error@2x.png */,
+				0BE2A8C413519D6000188E66 /* svhud-success.png */,
+				0BE2A8C513519D6000188E66 /* svhud-success@2x.png */,
+			);
+			name = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* WNDemoApp.app */,
+				1D6058910D05DD3D006BFB54 /* studydictionary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,7 +178,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				0B3041F21347BFB9004F2D4E /* WordnikUI.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -142,7 +190,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* WNDemoApp_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* studydictionary_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -151,8 +199,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B53F2EF134D6E1600B61B41 /* Images */,
+				0B0039B51347C22100606EF3 /* BetterDictionary.xcdatamodeld */,
+				0B0039C31347C28400606EF3 /* DictionarySearchViewController.xib */,
+				0B0039C61347C28400606EF3 /* WordDefinitionViewController.xib */,
+				0B0039C91347C28400606EF3 /* WordHistoryViewController.xib */,
 				EA4C99F6132F5B0400B76158 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* WNDemoApp-Info.plist */,
+				8D1107310486CEB800E47090 /* studydictionary-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -160,108 +213,26 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B003A381347C60700606EF3 /* CoreFoundation.framework */,
+				0B0039D21347C50800606EF3 /* CoreData.framework */,
 				EA4C9A5A132F5C0E00B76158 /* SystemConfiguration.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				EA4C9A52132F5BE700B76158 /* CoreText.framework */,
 				EA4C9A54132F5BE700B76158 /* libsqlite3.dylib */,
+				0BE2A8BF13518F5C00188E66 /* QuartzCore.framework */,
+				0B3057481347C187003C0997 /* WordnikUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EA7BD3C9132F5CE4008611AE /* Main Catalog View */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C9A05132F5B0400B76158 /* WNDemoCatalogViewController.xib */,
-				EA4C9A03132F5B0400B76158 /* WNDemoCatalogViewController.h */,
-				EA4C9A04132F5B0400B76158 /* WNDemoCatalogViewController.m */,
-				EA7BD3CD132F5D34008611AE /* Authentication */,
-				EA7BD3CB132F5D14008611AE /* Word of the Day */,
-				EA7BD3CE132F5D60008611AE /* Random Words */,
-				EA7BD3CF132F5D70008611AE /* Word Info */,
-				EA7BD3CA132F5D02008611AE /* Word Lists */,
-				EA7BD3CC132F5D26008611AE /* Word Search */,
-				EA4C9A3F132F5B6500B76158 /* WNAdditions.h */,
-			);
-			name = "Main Catalog View";
-			sourceTree = "<group>";
-		};
-		EA7BD3CA132F5D02008611AE /* Word Lists */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C9A08132F5B0400B76158 /* WNDemoCreateListViewController.xib */,
-				EA4C9A0B132F5B0400B76158 /* WNDemoDeleteWordListViewController.xib */,
-				EA4C9A0E132F5B0400B76158 /* WNDemoModifyWordListViewController.xib */,
-				EA4C9A06132F5B0400B76158 /* WNDemoCreateListViewController.h */,
-				EA4C9A07132F5B0400B76158 /* WNDemoCreateListViewController.m */,
-				EA4C9A09132F5B0400B76158 /* WNDemoDeleteWordListViewController.h */,
-				EA4C9A0A132F5B0400B76158 /* WNDemoDeleteWordListViewController.m */,
-				EA4C9A0C132F5B0400B76158 /* WNDemoModifyWordListViewController.h */,
-				EA4C9A0D132F5B0400B76158 /* WNDemoModifyWordListViewController.m */,
-				EA4C99F9132F5B0400B76158 /* WNDemoAllWordListsViewController.xib */,
-				EA4C99F7132F5B0400B76158 /* WNDemoAllWordListsViewController.h */,
-				EA4C99F8132F5B0400B76158 /* WNDemoAllWordListsViewController.m */,
-			);
-			name = "Word Lists";
-			sourceTree = "<group>";
-		};
-		EA7BD3CB132F5D14008611AE /* Word of the Day */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C9A17132F5B0400B76158 /* WNDemoWordOfTheDayViewController.xib */,
-				EA4C9A15132F5B0400B76158 /* WNDemoWordOfTheDayViewController.h */,
-				EA4C9A16132F5B0400B76158 /* WNDemoWordOfTheDayViewController.m */,
-			);
-			name = "Word of the Day";
-			sourceTree = "<group>";
-		};
-		EA7BD3CC132F5D26008611AE /* Word Search */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C9A02132F5B0400B76158 /* WNDemoAutocompleteViewController.xib */,
-				EA4C9A00132F5B0400B76158 /* WNDemoAutocompleteViewController.h */,
-				EA4C9A01132F5B0400B76158 /* WNDemoAutocompleteViewController.m */,
-			);
-			name = "Word Search";
-			sourceTree = "<group>";
-		};
-		EA7BD3CD132F5D34008611AE /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C99FD132F5B0400B76158 /* WNDemoAuthViewController.h */,
-				EA4C99FE132F5B0400B76158 /* WNDemoAuthViewController.m */,
-				EA4C99FF132F5B0400B76158 /* WNDemoAuthViewController.xib */,
-			);
-			name = Authentication;
-			sourceTree = "<group>";
-		};
-		EA7BD3CE132F5D60008611AE /* Random Words */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C9A0F132F5B0400B76158 /* WNDemoRandomWordsViewController.h */,
-				EA4C9A10132F5B0400B76158 /* WNDemoRandomWordsViewController.m */,
-				EA4C9A11132F5B0400B76158 /* WNDemoRandomWordsViewController.xib */,
-			);
-			name = "Random Words";
-			sourceTree = "<group>";
-		};
-		EA7BD3CF132F5D70008611AE /* Word Info */ = {
-			isa = PBXGroup;
-			children = (
-				EA4C9A12132F5B0400B76158 /* WNDemoWordInfoViewController.h */,
-				EA4C9A13132F5B0400B76158 /* WNDemoWordInfoViewController.m */,
-				EA4C9A14132F5B0400B76158 /* WNDemoWordInfoViewController.xib */,
-			);
-			name = "Word Info";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* WNDemoApp */ = {
+		1D6058900D05DD3D006BFB54 /* studydictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WNDemoApp" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "studydictionary" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -271,9 +242,9 @@
 			);
 			dependencies = (
 			);
-			name = WNDemoApp;
+			name = studydictionary;
 			productName = WNDemoApp;
-			productReference = 1D6058910D05DD3D006BFB54 /* WNDemoApp.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* studydictionary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +252,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WNDemoApp" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "studydictionary" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -295,7 +266,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* WNDemoApp */,
+				1D6058900D05DD3D006BFB54 /* studydictionary */,
 			);
 		};
 /* End PBXProject section */
@@ -306,17 +277,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA4C9A18132F5B0400B76158 /* MainWindow.xib in Resources */,
-				EA4C9A1A132F5B0400B76158 /* WNDemoAllWordListsViewController.xib in Resources */,
-				EA4C9A1C132F5B0400B76158 /* WNDemoAppViewController.xib in Resources */,
-				EA4C9A1E132F5B0400B76158 /* WNDemoAuthViewController.xib in Resources */,
-				EA4C9A20132F5B0400B76158 /* WNDemoAutocompleteViewController.xib in Resources */,
-				EA4C9A22132F5B0400B76158 /* WNDemoCatalogViewController.xib in Resources */,
-				EA4C9A24132F5B0400B76158 /* WNDemoCreateListViewController.xib in Resources */,
-				EA4C9A26132F5B0400B76158 /* WNDemoDeleteWordListViewController.xib in Resources */,
-				EA4C9A28132F5B0400B76158 /* WNDemoModifyWordListViewController.xib in Resources */,
-				EA4C9A2A132F5B0400B76158 /* WNDemoRandomWordsViewController.xib in Resources */,
-				EA4C9A2C132F5B0400B76158 /* WNDemoWordInfoViewController.xib in Resources */,
-				EA4C9A2E132F5B0400B76158 /* WNDemoWordOfTheDayViewController.xib in Resources */,
+				0B0039CD1347C28400606EF3 /* DictionarySearchViewController.xib in Resources */,
+				0B0039CF1347C28400606EF3 /* WordDefinitionViewController.xib in Resources */,
+				0B0039D11347C28400606EF3 /* WordHistoryViewController.xib in Resources */,
+				0B53F2F6134D6E5F00B61B41 /* book.png in Resources */,
+				0B53F2F7134D6E5F00B61B41 /* book@2x.png in Resources */,
+				0B53F2F8134D6E5F00B61B41 /* notepad.png in Resources */,
+				0B53F2F9134D6E5F00B61B41 /* notepad@2x.png in Resources */,
+				0BE2A8C613519D6000188E66 /* svhud-error.png in Resources */,
+				0BE2A8C713519D6000188E66 /* svhud-error@2x.png in Resources */,
+				0BE2A8C813519D6000188E66 /* svhud-success.png in Resources */,
+				0BE2A8C913519D6000188E66 /* svhud-success@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,17 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				EA4C9A19132F5B0400B76158 /* WNDemoAllWordListsViewController.m in Sources */,
-				EA4C9A1B132F5B0400B76158 /* WNDemoAppDelegate.m in Sources */,
-				EA4C9A1D132F5B0400B76158 /* WNDemoAuthViewController.m in Sources */,
-				EA4C9A1F132F5B0400B76158 /* WNDemoAutocompleteViewController.m in Sources */,
-				EA4C9A21132F5B0400B76158 /* WNDemoCatalogViewController.m in Sources */,
-				EA4C9A23132F5B0400B76158 /* WNDemoCreateListViewController.m in Sources */,
-				EA4C9A25132F5B0400B76158 /* WNDemoDeleteWordListViewController.m in Sources */,
-				EA4C9A27132F5B0400B76158 /* WNDemoModifyWordListViewController.m in Sources */,
-				EA4C9A29132F5B0400B76158 /* WNDemoRandomWordsViewController.m in Sources */,
-				EA4C9A2B132F5B0400B76158 /* WNDemoWordInfoViewController.m in Sources */,
-				EA4C9A2D132F5B0400B76158 /* WNDemoWordOfTheDayViewController.m in Sources */,
+				0B0039B81347C22100606EF3 /* BetterDictionary.xcdatamodeld in Sources */,
+				0B0039BC1347C24100606EF3 /* BetterDictionaryAppDelegate.m in Sources */,
+				0B0039CC1347C28400606EF3 /* DictionarySearchViewController.m in Sources */,
+				0B0039CE1347C28400606EF3 /* WordDefinitionViewController.m in Sources */,
+				0B0039D01347C28400606EF3 /* WordHistoryViewController.m in Sources */,
+				0BE2A8B613518E5F00188E66 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,14 +320,19 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Wordnik WordKit 1.0/iOS Framework\"",
 					"\"$(SRCROOT)/../../Code/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
+					"\"$(SRCROOT)/External/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WNDemoApp_Prefix.pch;
-				INFOPLIST_FILE = "WNDemoApp-Info.plist";
+				GCC_PREFIX_HEADER = studydictionary_Prefix.pch;
+				INFOPLIST_FILE = "studydictionary-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/admob\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = WNDemoApp;
+				PRODUCT_NAME = studydictionary;
 			};
 			name = Debug;
 		};
@@ -374,11 +345,16 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Wordnik WordKit 1.0/iOS Framework\"",
 					"\"$(SRCROOT)/../../Code/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
+					"\"$(SRCROOT)/External/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WNDemoApp_Prefix.pch;
-				INFOPLIST_FILE = "WNDemoApp-Info.plist";
-				PRODUCT_NAME = WNDemoApp;
+				GCC_PREFIX_HEADER = studydictionary_Prefix.pch;
+				INFOPLIST_FILE = "studydictionary-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/admob\"",
+				);
+				PRODUCT_NAME = studydictionary;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -387,11 +363,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: James Weinert (VU4X4H4J4C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Weinert (VU4X4H4J4C)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "A82E6922-5D54-4577-A4EB-1A68B68C31D4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A82E6922-5D54-4577-A4EB-1A68B68C31D4";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -400,12 +379,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: James Weinert (VU4X4H4J4C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Weinert (VU4X4H4J4C)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "A82E6922-5D54-4577-A4EB-1A68B68C31D4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A82E6922-5D54-4577-A4EB-1A68B68C31D4";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -413,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WNDemoApp" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "studydictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -422,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WNDemoApp" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "studydictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
@@ -432,6 +414,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B0039B51347C22100606EF3 /* BetterDictionary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0B0039B61347C22100606EF3 /* BetterDictionary.xcdatamodel */,
+			);
+			currentVersion = 0B0039B61347C22100606EF3 /* BetterDictionary.xcdatamodel */;
+			name = BetterDictionary.xcdatamodeld;
+			path = ../../Code/BetterDictionary/BetterDictionary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }

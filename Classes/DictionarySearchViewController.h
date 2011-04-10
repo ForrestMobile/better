@@ -7,19 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WordService.h"
+#import <Wordnik/Wordnik.h>
 
 
-@interface DictionarySearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate> {
+@interface DictionarySearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, WNClientObserver> {
 	UISearchBar *searchBar;
-	WordService *wordService;
+	WNClient *client;
+    WNRequestTicket *requestTicket_;
 	
 	NSArray *searchResults;
-	NSOperationQueue *workQueue;
 }
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, retain) WordService *wordService;
 @property (nonatomic, retain) NSArray *searchResults;
-@property (nonatomic, retain) NSOperationQueue *workQueue;
 
 @end

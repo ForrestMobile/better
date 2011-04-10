@@ -7,24 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MBProgressHUD.h"
-#import "AdViewController.h"
 
 
-@interface WordDefinitionViewController : UIViewController <MBProgressHUDDelegate> {
-	AdViewController *adViewController;
-    MBProgressHUD *loadingStatus;
+@interface WordDefinitionViewController : UIViewController {
 	UITextView *wordDefinitionView;
 	NSString *wordToLookup;
-    
 }
-@property (nonatomic, retain) IBOutlet AdViewController *adViewController;
 @property (nonatomic, retain) IBOutlet UITextView *wordDefinitionView;
 @property (nonatomic, retain) NSString *wordToLookup;
 
 - (void)updateDefinition;
 - (void)updateDefinitionText:(NSString *)definition;
-
-- (void) didPressLookupButton;
 
 @end

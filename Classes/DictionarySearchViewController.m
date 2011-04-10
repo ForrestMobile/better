@@ -13,7 +13,7 @@
 
 
 @implementation DictionarySearchViewController
-@synthesize searchBar, wordService, searchResults, workQueue;
+@synthesize searchBar, searchResults;
 
 
 #pragma mark -
@@ -21,9 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	wordService = [[WordService alloc] init];
-	workQueue = [[NSOperationQueue alloc] init];
-	[workQueue setMaxConcurrentOperationCount:1];
+    
+    BetterDictionaryAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    client = [appDelegate wordnikClient];
+    [client addObserver: self];
 }
 
 
@@ -65,7 +66,6 @@
         [context save:&error];
     }
  	[request release];
-
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -107,26 +107,65 @@
 #pragma mark -
 #pragma mark Search bar delegate methods
 
-- (void)updateSearch:(NSString *)searchText {
-	self.searchResults = [wordService suggestWord:searchText];
-	
-	[self.searchDisplayController.searchResultsTableView performSelectorOnMainThread:@selector(reloadData) 
-																		  withObject:nil 
-																	   waitUntilDone:YES];
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {    
+    /* Cancel any running request */
+    [requestTicket_ cancel];
+    [requestTicket_ release];
+    requestTicket_ = nil;
+    
+    /* If word was deleted, simply reset the current result text. */
+    if ([searchText length] == 0) {
+//        resultTextView.text = nil;
+        return;
+    }
+    
+    /* Submit an autocompletion request */
+	WNWordSearchRequest * req = [WNWordSearchRequest requestWithWordFragment:searchText
+																		skip:0 
+																	   limit:10 
+														 includePartOfSpeech:nil
+														 excludePartOfSpeech:nil
+															  minCorpusCount:0
+															  maxCorpusCount:0
+														  minDictionaryCount:0
+														  maxDictionaryCount:0
+																   minLength:0
+																   maxLength:0
+															 resultCollation:WNAutocompleteWordCollationFrequencyDescending];
+    
+    requestTicket_ = [[client autocompletedWordsWithRequest:req] retain];
 }
 
 
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-	if ([searchText length] > 0) {
-		NSInvocationOperation *operation = [[[NSInvocationOperation alloc] initWithTarget:self
-																				 selector:@selector(updateSearch:)
-																				   object:searchText] autorelease];
-		[workQueue cancelAllOperations];
-		[workQueue addOperation:operation];
-	} else {
-        self.searchResults = nil;
-		[self.searchDisplayController.searchResultsTableView reloadData];
-	}
+#pragma mark -
+#pragma mark WNClient delegate methods
+
+- (void) client:(WNClient *)client autocompleteWordRequestDidFailWithError:(NSError *)error requestTicket:(WNRequestTicket *) requestTicket {
+    [requestTicket_ release];
+    requestTicket_ = nil;
+    
+    /* Report error */
+    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle: @"Lookup Failure" 
+                                                     message: [error localizedFailureReason]
+                                                    delegate: nil 
+                                           cancelButtonTitle: @"OK" 
+                                           otherButtonTitles: nil] autorelease];
+    [alert show];
+}
+
+
+- (void) client:(WNClient *)client didReceiveAutocompleteWordResponse:(WNWordSearchResponse *)response requestTicket:(WNRequestTicket *)requestTicket {
+    /* Verify that this corresponds to our request */
+    if (![requestTicket_ isEqual: requestTicket])
+        return;
+    
+    /* Drop saved reference to the request ticket */
+    [requestTicket_ release];
+    requestTicket_ = nil;
+    
+    /* Display results */
+    searchResults = [response.words retain];
+    [self.searchDisplayController.searchResultsTableView reloadData];
 }
 
 
@@ -143,18 +182,13 @@
 - (void)viewDidUnload {
     [super viewDidUnload];
 	self.searchBar = nil;
-    self.wordService = nil;
 	self.searchResults = nil;
-	self.workQueue = nil;
-
 }
 
 
 - (void)dealloc {
 	[searchBar release];
-	[wordService release];
 	[searchResults release];
-	[workQueue release];
     [super dealloc];
 }
 
