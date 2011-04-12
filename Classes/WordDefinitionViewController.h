@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 
-#import "GADBannerView.h"
-
-
-@interface WordDefinitionViewController : UIViewController <ADBannerViewDelegate, GADBannerViewDelegate> {
+@interface WordDefinitionViewController : UIViewController <ADBannerViewDelegate> {
 	UITextView *wordDefinitionView;
 	NSString *wordToLookup;
     
