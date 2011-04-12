@@ -90,12 +90,12 @@
 		0BE2A8C513519D6000188E66 /* svhud-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "svhud-success@2x.png"; path = "External/SVProgressHUD/SVProgressHUD/Ressources/svhud-success@2x.png"; sourceTree = "<group>"; };
 		0BF42CB1134FCD24003844D2 /* BetterDictionaryAPIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAPIConstants.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* studydictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studydictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* StudyDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* studydictionary_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = studydictionary_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* studydictionary-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "studydictionary-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* StudyDictionary_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyDictionary_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* StudyDictionary-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StudyDictionary-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		EA4C99F6132F5B0400B76158 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		EA4C9A52132F5BE700B76158 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		EA4C9A54132F5BE700B76158 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -211,7 +211,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* studydictionary.app */,
+				1D6058910D05DD3D006BFB54 /* StudyDictionary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* studydictionary_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* StudyDictionary_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -246,7 +246,7 @@
 				0B0039C91347C28400606EF3 /* WordHistoryViewController.xib */,
 				EA4C99F6132F5B0400B76158 /* MainWindow.xib */,
 				0B7A5F201355157D0086FD35 /* StudyDictionary.xcdatamodeld */,
-				8D1107310486CEB800E47090 /* studydictionary-Info.plist */,
+				8D1107310486CEB800E47090 /* StudyDictionary-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -275,9 +275,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* studydictionary */ = {
+		1D6058900D05DD3D006BFB54 /* StudyDictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "studydictionary" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "StudyDictionary" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -287,9 +287,9 @@
 			);
 			dependencies = (
 			);
-			name = studydictionary;
+			name = StudyDictionary;
 			productName = WNDemoApp;
-			productReference = 1D6058910D05DD3D006BFB54 /* studydictionary.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* StudyDictionary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +297,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "studydictionary" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "StudyDictionary" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -311,7 +311,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* studydictionary */,
+				1D6058900D05DD3D006BFB54 /* StudyDictionary */,
 			);
 		};
 /* End PBXProject section */
@@ -375,15 +375,15 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = studydictionary_Prefix.pch;
-				INFOPLIST_FILE = "studydictionary-Info.plist";
+				GCC_PREFIX_HEADER = StudyDictionary_Prefix.pch;
+				INFOPLIST_FILE = "StudyDictionary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External/GoogleAdMobAdsSDK\"",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = studydictionary;
+				PRODUCT_NAME = StudyDictionary;
 			};
 			name = Debug;
 		};
@@ -397,14 +397,14 @@
 					"\"$(SRCROOT)/External/wordkit/frameworks/objective-c/Wordnik WordKit 1.0/iOS Framework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = studydictionary_Prefix.pch;
-				INFOPLIST_FILE = "studydictionary-Info.plist";
+				GCC_PREFIX_HEADER = StudyDictionary_Prefix.pch;
+				INFOPLIST_FILE = "StudyDictionary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External/GoogleAdMobAdsSDK\"",
 				);
-				PRODUCT_NAME = studydictionary;
+				PRODUCT_NAME = StudyDictionary;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -445,7 +445,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "studydictionary" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "StudyDictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -454,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "studydictionary" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "StudyDictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
