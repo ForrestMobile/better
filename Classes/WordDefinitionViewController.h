@@ -7,16 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
+
+#import "GADBannerView.h"
 
 
-@interface WordDefinitionViewController : UIViewController {
+@interface WordDefinitionViewController : UIViewController <ADBannerViewDelegate, GADBannerViewDelegate> {
 	UITextView *wordDefinitionView;
 	NSString *wordToLookup;
+    
+    ADBannerView *adBannerView;
 }
 @property (nonatomic, retain) IBOutlet UITextView *wordDefinitionView;
 @property (nonatomic, retain) NSString *wordToLookup;
 
+@property (nonatomic, retain) IBOutlet ADBannerView *adBannerView;
+
 - (void)updateDefinition;
-- (void)updateDefinitionText:(NSString *)definition;
 
 @end

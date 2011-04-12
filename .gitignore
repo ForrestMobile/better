@@ -1,8 +1,6 @@
 Classes/BetterDictionaryAPIConstants.h
 Images/*
-External/admob/*
-External/touch-json/*
-Frameworks/*
+External/GoogleAdMobAdsSDK/*
 
 #Xcode
 build/*

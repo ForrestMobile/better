@@ -11,15 +11,19 @@
 
 #import "WordDefinitionViewController.h"
 #import "BetterDictionaryAppDelegate.h"
+#import "BetterDictionaryAPIConstants.h"
 #import "SVProgressHUD.h"
 
 
 @implementation WordDefinitionViewController
 @synthesize wordDefinitionView, wordToLookup;
+@synthesize adBannerView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.title = wordToLookup;
+    
+    adBannerView.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -82,7 +86,7 @@
             
             /* Example sentences. */
             if (word.examples != nil && word.examples.count > 0) {
-                NSArray *strings = [word.examples wn_map: ^(id obj) {
+                NSArray *strings = [word.examples wn_map:^(id obj) {
                     WNExample *sentence = obj;
                     return [NSString stringWithFormat: @"“%@”\n%@ (%d)", 
                             sentence.text, sentence.title, [sentence.publicationDateComponents year]];
@@ -99,6 +103,44 @@
 
 
 #pragma mark -
+#pragma mark ADBannerViewDelegate methods
+
+- (void)updateiADBannerViewPosition:(BOOL)animated {
+    CGFloat animationDuration = animated ? 0.2f : 0.0f;
+    
+    CGFloat bannerHeight = self.adBannerView.bounds.size.height;
+    
+    CGRect newBannerFrame = self.adBannerView.frame;
+    CGRect newWordDefFrame = self.view.frame;
+    
+    if(self.adBannerView.bannerLoaded) {
+        newWordDefFrame.size.height -= bannerHeight;
+        newWordDefFrame.origin.y += bannerHeight;
+        newBannerFrame.origin.y = self.view.frame.origin.y;
+    } else {
+        newBannerFrame.origin.y = self.view.frame.origin.y - bannerHeight;
+    }
+    
+    [UIView animateWithDuration:animationDuration
+                     animations:^{
+                         self.wordDefinitionView.frame = newWordDefFrame;
+                         self.adBannerView.frame = newBannerFrame;
+                     }];
+}
+
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    NSLog(@"bannerViewDidLoadAd");
+    [self updateiADBannerViewPosition:YES];
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    NSLog(@"bannerView didFailToReceiveAd");
+    [self updateiADBannerViewPosition:YES];
+}
+
+
+#pragma mark -
 #pragma mark Memory management
 
 
@@ -108,6 +150,8 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+    adBannerView.delegate = nil;
+    self.adBannerView = nil;
     self.wordDefinitionView = nil;
 	self.wordToLookup = nil;
 }
@@ -115,6 +159,8 @@
 
 - (void)dealloc {
     [super dealloc];
+    adBannerView.delegate = nil;
+    [adBannerView release];
 	[wordDefinitionView release];
 	[wordToLookup release];
 }
