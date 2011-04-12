@@ -22,7 +22,6 @@
     NSPersistentStoreCoordinator *persistentStoreCoordinator_;
     
     WNClient *wordnikClient_;
-    NSString *wordnikAPIKey;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -33,7 +32,6 @@
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @property (nonatomic, retain, readonly) WNClient *wordnikClient_;
-@property (nonatomic, retain, readonly) NSString *wordnikAPIKey;
 
 - (NSURL *)applicationDocumentsDirectory;
 - (void)saveContext;

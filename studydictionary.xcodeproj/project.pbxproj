@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B0039B81347C22100606EF3 /* BetterDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039B51347C22100606EF3 /* BetterDictionary.xcdatamodeld */; };
 		0B0039BC1347C24100606EF3 /* BetterDictionaryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039BB1347C24100606EF3 /* BetterDictionaryAppDelegate.m */; };
 		0B0039CC1347C28400606EF3 /* DictionarySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0039C21347C28400606EF3 /* DictionarySearchViewController.m */; };
 		0B0039CD1347C28400606EF3 /* DictionarySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B0039C31347C28400606EF3 /* DictionarySearchViewController.xib */; };
@@ -33,6 +32,7 @@
 		0B53F2F9134D6E5F00B61B41 /* notepad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B53F2F5134D6E5F00B61B41 /* notepad@2x.png */; };
 		0B7A5F0F13550AF00086FD35 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A5F0D13550AF00086FD35 /* gear.png */; };
 		0B7A5F1013550AF00086FD35 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7A5F0E13550AF00086FD35 /* gear@2x.png */; };
+		0B7A5F221355157D0086FD35 /* StudyDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A5F201355157D0086FD35 /* StudyDictionary.xcdatamodeld */; };
 		0BE2A8B613518E5F00188E66 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2A8B513518E5F00188E66 /* SVProgressHUD.m */; };
 		0BE2A8C013518F5C00188E66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE2A8BF13518F5C00188E66 /* QuartzCore.framework */; };
 		0BE2A8C613519D6000188E66 /* svhud-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BE2A8C213519D6000188E66 /* svhud-error.png */; };
@@ -50,7 +50,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B0039B61347C22100606EF3 /* BetterDictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BetterDictionary.xcdatamodel; sourceTree = "<group>"; };
 		0B0039BA1347C24100606EF3 /* BetterDictionaryAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryAppDelegate.h; sourceTree = "<group>"; };
 		0B0039BB1347C24100606EF3 /* BetterDictionaryAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterDictionaryAppDelegate.m; sourceTree = "<group>"; };
 		0B0039BD1347C28300606EF3 /* BetterDictionaryConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetterDictionaryConstants.h; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		0B53F2F5134D6E5F00B61B41 /* notepad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notepad@2x.png"; path = "Images/TabBar/notepad@2x.png"; sourceTree = "<group>"; };
 		0B7A5F0D13550AF00086FD35 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear.png; path = Images/TabBar/gear.png; sourceTree = "<group>"; };
 		0B7A5F0E13550AF00086FD35 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gear@2x.png"; path = "Images/TabBar/gear@2x.png"; sourceTree = "<group>"; };
+		0B7A5F211355157D0086FD35 /* StudyDictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudyDictionary.xcdatamodel; sourceTree = "<group>"; };
 		0BE2A8B413518E5F00188E66 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = External/SVProgressHUD/SVProgressHUD/SVProgressHUD.h; sourceTree = SOURCE_ROOT; };
 		0BE2A8B513518E5F00188E66 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = External/SVProgressHUD/SVProgressHUD/SVProgressHUD.m; sourceTree = SOURCE_ROOT; };
 		0BE2A8BF13518F5C00188E66 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -241,11 +241,11 @@
 			isa = PBXGroup;
 			children = (
 				0B53F2EF134D6E1600B61B41 /* Images */,
-				0B0039B51347C22100606EF3 /* BetterDictionary.xcdatamodeld */,
 				0B0039C31347C28400606EF3 /* DictionarySearchViewController.xib */,
 				0B0039C61347C28400606EF3 /* WordDefinitionViewController.xib */,
 				0B0039C91347C28400606EF3 /* WordHistoryViewController.xib */,
 				EA4C99F6132F5B0400B76158 /* MainWindow.xib */,
+				0B7A5F201355157D0086FD35 /* StudyDictionary.xcdatamodeld */,
 				8D1107310486CEB800E47090 /* studydictionary-Info.plist */,
 			);
 			name = Resources;
@@ -351,12 +351,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				0B0039B81347C22100606EF3 /* BetterDictionary.xcdatamodeld in Sources */,
 				0B0039BC1347C24100606EF3 /* BetterDictionaryAppDelegate.m in Sources */,
 				0B0039CC1347C28400606EF3 /* DictionarySearchViewController.m in Sources */,
 				0B0039CE1347C28400606EF3 /* WordDefinitionViewController.m in Sources */,
 				0B0039D01347C28400606EF3 /* WordHistoryViewController.m in Sources */,
 				0BE2A8B613518E5F00188E66 /* SVProgressHUD.m in Sources */,
+				0B7A5F221355157D0086FD35 /* StudyDictionary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,14 +466,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0B0039B51347C22100606EF3 /* BetterDictionary.xcdatamodeld */ = {
+		0B7A5F201355157D0086FD35 /* StudyDictionary.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0B0039B61347C22100606EF3 /* BetterDictionary.xcdatamodel */,
+				0B7A5F211355157D0086FD35 /* StudyDictionary.xcdatamodel */,
 			);
-			currentVersion = 0B0039B61347C22100606EF3 /* BetterDictionary.xcdatamodel */;
-			name = BetterDictionary.xcdatamodeld;
-			path = ../../Code/BetterDictionary/BetterDictionary.xcdatamodeld;
+			currentVersion = 0B7A5F211355157D0086FD35 /* StudyDictionary.xcdatamodel */;
+			path = StudyDictionary.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

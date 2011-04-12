@@ -6,10 +6,6 @@
 //  Copyright 2011 Weinert Works. All rights reserved.
 //
 
-// API Keys
-#define kWordNikKey     @"WORDNIK_API_KEY"
-#define kAdMobKey       @"ADMOB_PUBLISHER_ID"
-
 // Core Data Keys
 #define kEntityName     @"Word"
 #define kWordKey        @"word"
@@ -22,4 +18,4 @@
 #define kErrorUnableToDeleteWord            @"Unable to delete word from history"
 #define kErrorUnableToCreatePersistentStore @"Unable to create Persistent Store"
 
-#define kErrorCoreDataMessageForUser                @"Unable to save word to history. Please restart the app using your Home button"
+#define kErrorCoreDataMessageForUser        @"Unable to save word to history. Please restart the app using your Home button"

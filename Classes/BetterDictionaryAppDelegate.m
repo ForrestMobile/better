@@ -8,12 +8,12 @@
 
 #import "BetterDictionaryAppDelegate.h"
 #import "BetterDictionaryConstants.h"
+#import "BetterDictionaryAPIConstants.h"
 
 @implementation BetterDictionaryAppDelegate
 
 @synthesize window;
 @synthesize tabBarController;
-@synthesize wordnikAPIKey;
 @synthesize wordnikClient_;
 
 
@@ -21,14 +21,6 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"APIKeys" ofType:@"plist"];
-	NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-	
-	wordnikAPIKey = [[dict objectForKey:kWordNikKey] retain];
- //   ADMOB_PRODUCT_ID = [[dict objectForKey:kAdMobKey] retain];
-	
-	[dict release];
-	
     [self.window addSubview:self.tabBarController.view];
     [self.window makeKeyAndVisible];
     
@@ -103,7 +95,7 @@
         return wordnikClient_;
     }
     
-    WNClientConfig *config = [WNClientConfig configWithAPIKey:wordnikAPIKey ];
+    WNClientConfig *config = [WNClientConfig configWithAPIKey:WORDNIK_API_KEY ];
     wordnikClient_ = [[WNClient alloc] initWithClientConfig:config];
     
     /* Fetch API usage information (for testing purposes). */
@@ -157,7 +149,7 @@
     if (managedObjectModel_ != nil) {
         return managedObjectModel_;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"BetterDictionary" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"StudyDictionary" withExtension:@"momd"];
     managedObjectModel_ = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];    
     return managedObjectModel_;
 }
@@ -173,7 +165,7 @@
         return persistentStoreCoordinator_;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"BetterDictionary.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"StudyDictionary.sqlite"];
     
     NSError *error = nil;
     persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
@@ -224,8 +216,6 @@
 	[tabBarController release];
     [window release];
     
-    [wordnikAPIKey release];
-//    [ADMOB_PRODUCT_ID release];
     [super dealloc];
 }
 
